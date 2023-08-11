@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css2?family=600&family=Raleway:wght@300&display=swap)
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap)
+
+$first-font-family: 'Raleway', sans-serif
+$second-font-family: 'Open Sans', sans-serif
+$principal-color: rgba(8, 166, 228, 1)
+
+* 
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+  
+body
+    min-width: 320px
+    background: #FFF
+
+
+@media only screen and (min-width: 375px) and (max-width: 600px)
+    .head
+        background: #FFF
+        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29)
+        height: auto
+        position: fixed
+        width: 100%
+        h1
+            font-family: $first-font-family
+            display: inline-block
+            padding: 17px 94px 16px 25px
+            color: $principal-color
+            font-size: 32px
+            font-style: normal
+            font-weight: 300
+            line-height: 37px
+        svg.head__iconburger,
+        svg.head__iconclose
+            margin-bottom: 5px
+            cursor: pointer
+        svg.head__iconclose
+            display: none
+        nav.menu 
+            display: none
+            ul.menu__list 
+                list-style: none
+                padding: 24px 25px 
+            ul.menu__list li 
+                padding-top: 14px
+            ul.menu__list li a 
+                text-decoration: none
+                color: #A5A5A5
+                text-align: center
+                font-family: Open Sans
+                font-size: 11px
+                font-style: normal
+                font-weight: 700
+                line-height: 15px
+                letter-spacing: 3.28px
+                text-transform: uppercase
+            ul.menu__list li a:hover 
+                color: rgba(0, 0, 0, 1)
+    /* END HEAD */
+    .main
+        .main-first__section
+            padding-top: 180px
+            .first-article__sellmore
+                margin: 0 auto
+                text-align: center
+                width: 310px
+                h2
+                    font-family: $first-font-family
+                    color: #000
+                    font-size: 35px
+                    font-style: normal
+                    font-weight: bold
+                    line-height: normal
+                    margin-bottom: 20px
+                p
+                    font-family: $second-font-family
+                    color: #000
+                    text-align: center
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: 23px
+                    margin-bottom: 28px
+                button
+                    border: none
+                    color: #FFF
+                    text-align: center
+                    font-family: $second-font-family
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 700
+                    line-height: 22px
+                    width: 310px
+                    height: 67px
+                    cursor: pointer
+                    border-radius: 40px
+                    background: #08A6E4
+                    box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.29)
+            .second-article__background
+                margin-top: 51px
+                height: 267px
+                width: 100%
+                background: url('../img/Background.png'), 50%
+                background-size: cover
+                background-position: center
