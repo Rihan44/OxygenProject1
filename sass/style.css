@@ -11,7 +11,7 @@ body {
   background: #FFF;
 }
 
-@media only screen and (min-width: 375px) and (max-width: 600px) {
+@media only screen and (min-width: 375px) and (max-width: 1000px) {
   .head {
     background: #FFF;
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
@@ -63,15 +63,15 @@ body {
     color: rgb(0, 0, 0);
   }
   /* END HEAD */
-  .main .main-first__section {
+  .main section.main-first__section {
     padding-top: 180px;
   }
-  .main .main-first__section .first-article__sellmore {
+  .main section.main-first__section .first-article__sellmore {
     margin: 0 auto;
     text-align: center;
     width: 310px;
   }
-  .main .main-first__section .first-article__sellmore h2 {
+  .main section.main-first__section .first-article__sellmore h2 {
     font-family: "Raleway", sans-serif;
     color: #000;
     font-size: 35px;
@@ -80,7 +80,7 @@ body {
     line-height: normal;
     margin-bottom: 20px;
   }
-  .main .main-first__section .first-article__sellmore p {
+  .main section.main-first__section .first-article__sellmore p {
     font-family: "Open Sans", sans-serif;
     color: #000;
     text-align: center;
@@ -90,7 +90,7 @@ body {
     line-height: 23px;
     margin-bottom: 28px;
   }
-  .main .main-first__section .first-article__sellmore button {
+  .main section.main-first__section .first-article__sellmore button {
     border: none;
     color: #FFF;
     text-align: center;
@@ -106,12 +106,336 @@ body {
     background: #08A6E4;
     box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.29);
   }
-  .main .main-first__section .second-article__background {
+  .main section.main-first__section .second-article__background {
     margin-top: 51px;
     height: 267px;
     width: 100%;
     background: url("../img/Background.png"), 50%;
     background-size: cover;
     background-position: center;
+  }
+  .main section.main-first__section .third-article__sales {
+    margin-top: 13px;
+    width: 100%;
+  }
+  .main section.main-first__section .third-article__sales h3 {
+    color: #000;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 35px;
+    width: 303px;
+    height: 112px;
+    margin: 0 auto;
+  }
+  .main section.main-first__section .third-article__sales div.third-article-sales__column {
+    margin-top: 25px;
+  }
+  .main section.main-first__section .third-article__sales div.third-article-sales__column img.third-article-sales-column__person {
+    width: 117px;
+    height: 140px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+  .main section.main-first__section .third-article__sales div.third-article-sales__column img.third-article-sales-column__eye {
+    width: 176px;
+    height: 167px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+  .main section.main-first__section .third-article__sales div.third-article-sales__column img.third-article-sales-column__posts {
+    width: 163px;
+    height: 168px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .main section.main-second__section {
+    width: 100%;
+    background: #F7F7F7;
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  .main section.main-second__section article.second-section__box {
+    margin: 0 auto;
+    margin-bottom: 41px;
+    width: 314px;
+    height: 370px;
+    border-radius: 5px;
+    border: 1px solid #E8E9ED;
+    background: #FFF;
+  }
+  .main section.main-second__section article.second-section-first__article div.first-article__portatil {
+    height: 180px;
+  }
+  .main section.main-second__section article.second-section-first__article div.first-article__portatil img.first-article-portatil__circule {
+    width: 129px;
+    height: 128px;
+    left: 145px;
+    position: relative;
+  }
+  .main section.main-second__section article.second-section-first__article div.first-article__portatil img.first-article-portatil__macbook {
+    width: 193px;
+    height: 110px;
+    position: relative;
+    top: -90px;
+    left: 50px;
+  }
+  .main section.main-second__section article.second-section-first__article div.first-article-portatil__description {
+    margin-left: 22px;
+  }
+  .main section.main-second__section article.second-section-first__article div.first-article-portatil__description h3 {
+    width: 220px;
+    height: 72px;
+    color: #000;
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+  }
+  .main section.main-second__section article.second-section-first__article div.first-article-portatil__description p {
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    width: 272px;
+  }
+  .main section.main-second__section article.second-section-second__article div.second-article__phone {
+    margin-bottom: 40px;
+  }
+  .main section.main-second__section article.second-section-second__article div.second-article__phone img.second-article-phone__ellipse {
+    width: 132px;
+    height: 132px;
+    top: 12px;
+    left: 25%;
+    position: relative;
+  }
+  .main section.main-second__section article.second-section-second__article div.second-article__phone img.second-article-phone {
+    width: 175px;
+    height: 135px;
+    left: -20%;
+    top: 25px;
+    position: relative;
+  }
+  .main section.main-second__section article.second-section-second__article div.second-article-phone__description {
+    margin-left: 22px;
+  }
+  .main section.main-second__section article.second-section-second__article div.second-article-phone__description h3 {
+    width: 218px;
+    height: 70px;
+    color: #000;
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 18px;
+  }
+  .main section.main-second__section article.second-section-second__article div.second-article-phone__description p {
+    width: 272px;
+    height: 77px;
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+  }
+  .main section.main-second__section article.second-section-third__article {
+    width: 100%;
+  }
+  .main section.main-second__section article.second-section-third__article div.third-article-frame__description {
+    width: 314px;
+    height: 298px;
+    border-radius: 5px;
+    border: 1px solid #E8E9ED;
+    background: #FFF;
+    margin: 0 auto;
+  }
+  .main section.main-second__section article.second-section-third__article div.third-article-frame__description h3, .main section.main-second__section article.second-section-third__article div.third-article-frame__description p {
+    margin-left: 22px;
+  }
+  .main section.main-second__section article.second-section-third__article div.third-article-frame__description h3 {
+    margin-top: 31px;
+    width: 274px;
+    height: 109px;
+    color: #000;
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .main section.main-second__section article.second-section-third__article div.third-article-frame__description p {
+    margin-top: 20px;
+    width: 274px;
+    height: 114px;
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .main section.main-second__section article.second-section-third__article div.third-section__frame {
+    margin: 0 auto;
+    width: 314px;
+    height: 195px;
+    border-radius: 5px;
+    border: 1px solid #E8E9ED;
+    background-image: url("../img/Frame 5.png");
+    background-size: auto;
+    background-position: center;
+  }
+  .main section.main-third__section {
+    margin-bottom: 45px;
+    padding-top: 55px;
+    width: 100%;
+    text-align: center;
+  }
+  .main section.main-third__section h2.third-section__title {
+    color: #000;
+    font-family: "Raleway", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 14px;
+  }
+  .main section.main-third__section article.card {
+    width: 293px;
+    height: 251px;
+    border-radius: 18px;
+    background: #FFF;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .main section.main-third__section article.card div.article-card-advantages__checks {
+    margin-left: 25px;
+  }
+  .main section.main-third__section article.card div.article-card__prices {
+    display: inline-block;
+    position: relative;
+    top: -45px;
+    right: -15px;
+  }
+  .main section.main-third__section article.card div.article-card__prices h4 {
+    width: 52px;
+    color: #13253B;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 24px;
+    margin: 0 auto;
+  }
+  .main section.main-third__section article.card div.article-card__prices h2 {
+    width: 59px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 64px;
+    margin: 0 auto;
+  }
+  .main section.main-third__section article.card div.article-card__advantages {
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 45px;
+    text-align: justify;
+  }
+  .main section.main-third__section article.card div.article-card__advantages svg {
+    display: inline-block;
+  }
+  .main section.main-third__section article.card div.article-card__advantages p {
+    margin-left: 10px;
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .main section.main-third__section article.card div.article-card__advantages img {
+    width: 11px;
+    height: 11px;
+  }
+  .main section.main-third__section article.card button.card-prices__button {
+    border: none;
+    width: 150px;
+    height: 50px;
+    position: relative;
+    bottom: -10px;
+    border-radius: 23px;
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .main section.main-third__section article.third-section-first__article {
+    border: 1px solid #FB3B64;
+  }
+  .main section.main-third__section article.third-section-first__article button.red {
+    background: #EB476E;
+  }
+  .main section.main-third__section article.third-section-first__article h2 {
+    color: #FB3B64;
+    font-family: "Open Sans", sans-serif;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 64px;
+  }
+  .main section.main-third__section article.third-section-second__article {
+    margin-top: 60px;
+    border: 1px solid #07ACE6;
+  }
+  .main section.main-third__section article.third-section-second__article div.article-card__prices h4 {
+    position: relative;
+    right: 20px;
+    color: #13253B;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 122.4%;
+  }
+  .main section.main-third__section article.third-section-second__article button.blue {
+    background: #07ACE6;
+  }
+  .main section.main-third__section article.third-section-second__article h2 {
+    color: #07ACE6;
+    line-height: 62px;
+  }
+  .main section.main-third__section article.third-section-third__article {
+    margin-top: 60px;
+    border: 1px solid #55DFB4;
+  }
+  .main section.main-third__section article.third-section-third__article div.article-card__prices h4 {
+    position: relative;
+    right: 5px;
+    color: #13253B;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 122.4%;
+  }
+  .main section.main-third__section article.third-section-third__article button.green {
+    background: #55DFB4;
+  }
+  .main section.main-third__section article.third-section-third__article h2 {
+    color: #55DFB4;
+    line-height: 62px;
   }
 }/*# sourceMappingURL=style.css.map */
