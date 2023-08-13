@@ -22,6 +22,7 @@ body
         height: auto
         position: fixed
         width: 100%
+        z-index: 1
         h1
             font-family: $first-font-family
             display: inline-block
@@ -58,9 +59,12 @@ body
             ul.menu__list li a:hover 
                 color: rgba(0, 0, 0, 1)
     /* END HEAD */
+    /* START MAIN */
     .main
+        /* FIRST SECTION */
         section.main-first__section
             padding-top: 180px
+            /* FIRST ARTICLE */
             .first-article__sellmore
                 margin: 0 auto
                 text-align: center
@@ -97,6 +101,7 @@ body
                     border-radius: 40px
                     background: #08A6E4
                     box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.29)
+            /* SECOND ARTICLE */
             .second-article__background
                 margin-top: 51px
                 height: 267px
@@ -104,6 +109,7 @@ body
                 background: url('../img/Background.png'), 50%
                 background-size: cover
                 background-position: center
+            /* THIRD ARTICLE */
             .third-article__sales
                 margin-top: 13px
                 width: 100%
@@ -136,7 +142,8 @@ body
                         height: 168px
                         display: block
                         margin: 0 auto
-                        margin-bottom: 50px                    
+                        margin-bottom: 50px   
+        /* SECOND SECTION */                 
         section.main-second__section
             width: 100%
             background:#F7F7F7
@@ -150,6 +157,7 @@ body
                 border-radius: 5px
                 border: 1px solid #E8E9ED
                 background: #FFF
+            /* FIRST ARTICLE */
             article.second-section-first__article
                 div.first-article__portatil
                     height: 180px
@@ -183,6 +191,7 @@ body
                         font-weight: 400
                         line-height: 21px
                         width: 272px
+            /* SECOND ARTICLE */
             article.second-section-second__article
                 div.second-article__phone
                     margin-bottom: 40px
@@ -219,6 +228,7 @@ body
                         font-style: normal
                         font-weight: 400
                         line-height: 19px
+            /* THIRD ARTICLE */
             article.second-section-third__article
                 width: 100%
                 div.third-article-frame__description
@@ -259,6 +269,7 @@ body
                     background-image: url('../img/Frame 5.png')
                     background-size: auto
                     background-position: center
+        /* THIRD SECTION */
         section.main-third__section
             margin-bottom:  45px
             padding-top: 55px    
@@ -303,6 +314,16 @@ body
                         font-weight: 300
                         line-height: 64px
                         margin: 0 auto
+                    p
+                        color: #13253B
+                        font-family: $first-font-family
+                        font-size: 12px
+                        font-style: normal
+                        font-weight: 700
+                        line-height: normal
+                        margin-top: 5px
+                        position: relative
+                        right: -12px
                 div.article-card__advantages
                     display: inline-block
                     margin-top: 25px
@@ -336,8 +357,10 @@ body
                     font-style: normal
                     font-weight: 700
                     line-height: normal
+            /* FIRST ARTICLE */
             article.third-section-first__article
                 border: 1px solid #FB3B64
+                transition: all 0.3s ease-in-out
                 button.red 
                     background: #EB476E
                 h2
@@ -347,28 +370,47 @@ body
                     font-style: normal
                     font-weight: 300
                     line-height: 64px
+            article.third-section-first__article:hover
+                transform: scale(1.1)
+                box-shadow: 5px 10px 27px 0px rgba(251, 59, 100, 1)
+            /* SECOND ARTICLE */
             article.third-section-second__article
                 margin-top: 60px
                 border: 1px solid #07ACE6
+                transition: all 0.3s ease-in-out
                 div.article-card__prices
-                    h4
+                    position: relative
+                    top: -20px
+                    right: -5px
+                    h4.article-card-prices__title
                         position: relative
-                        right: 20px
+                        right: 18px
                         color: #13253B
                         font-family: $first-font-family
                         font-size: 20px
                         font-style: normal
                         font-weight: 700
                         line-height: 122.4%
+                div.article-card__advantages
+                    margin: 0px
+                    margin-top: 25px
+                    margin-left: 31px
                 button.blue 
                     background: #07ACE6
                 h2
                     color: #07ACE6
                     line-height: 62px
+            article.third-section-second__article:hover
+                transform: scale(1.1)
+                box-shadow: 5px 10px 27px 0px rgba(7, 172, 230, 1)
+            /* THIRD ARTICLE */
             article.third-section-third__article
                 margin-top: 60px
                 border: 1px solid #55DFB4
+                transition: all 0.3s ease-in-out
                 div.article-card__prices
+                    p
+                        display: inline-block
                     h4
                         position: relative
                         right: 5px
@@ -383,4 +425,6 @@ body
                 h2
                     color: #55DFB4
                     line-height: 62px
-
+            article.third-section-third__article:hover
+                transform: scale(1.1)
+                box-shadow: 5px 10px 27px 0px rgba(85, 223, 180, 1)

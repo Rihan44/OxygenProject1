@@ -18,6 +18,7 @@ body {
     height: auto;
     position: fixed;
     width: 100%;
+    z-index: 1;
   }
   .head h1 {
     font-family: "Raleway", sans-serif;
@@ -63,8 +64,17 @@ body {
     color: rgb(0, 0, 0);
   }
   /* END HEAD */
+  /* START MAIN */
+  .main {
+    /* FIRST SECTION */
+    /* SECOND SECTION */                 
+    /* THIRD SECTION */
+  }
   .main section.main-first__section {
     padding-top: 180px;
+    /* FIRST ARTICLE */
+    /* SECOND ARTICLE */
+    /* THIRD ARTICLE */
   }
   .main section.main-first__section .first-article__sellmore {
     margin: 0 auto;
@@ -158,6 +168,9 @@ body {
     background: #F7F7F7;
     padding-top: 50px;
     padding-bottom: 40px;
+    /* FIRST ARTICLE */
+    /* SECOND ARTICLE */
+    /* THIRD ARTICLE */
   }
   .main section.main-second__section article.second-section__box {
     margin: 0 auto;
@@ -298,6 +311,9 @@ body {
     padding-top: 55px;
     width: 100%;
     text-align: center;
+    /* FIRST ARTICLE */
+    /* SECOND ARTICLE */
+    /* THIRD ARTICLE */
   }
   .main section.main-third__section h2.third-section__title {
     color: #000;
@@ -344,6 +360,17 @@ body {
     line-height: 64px;
     margin: 0 auto;
   }
+  .main section.main-third__section article.card div.article-card__prices p {
+    color: #13253B;
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 5px;
+    position: relative;
+    right: -12px;
+  }
   .main section.main-third__section article.card div.article-card__advantages {
     display: inline-block;
     margin-top: 25px;
@@ -384,6 +411,7 @@ body {
   }
   .main section.main-third__section article.third-section-first__article {
     border: 1px solid #FB3B64;
+    transition: all 0.3s ease-in-out;
   }
   .main section.main-third__section article.third-section-first__article button.red {
     background: #EB476E;
@@ -396,19 +424,34 @@ body {
     font-weight: 300;
     line-height: 64px;
   }
+  .main section.main-third__section article.third-section-first__article:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 10px 27px 0px rgb(251, 59, 100);
+  }
   .main section.main-third__section article.third-section-second__article {
     margin-top: 60px;
     border: 1px solid #07ACE6;
+    transition: all 0.3s ease-in-out;
   }
-  .main section.main-third__section article.third-section-second__article div.article-card__prices h4 {
+  .main section.main-third__section article.third-section-second__article div.article-card__prices {
     position: relative;
-    right: 20px;
+    top: -20px;
+    right: -5px;
+  }
+  .main section.main-third__section article.third-section-second__article div.article-card__prices h4.article-card-prices__title {
+    position: relative;
+    right: 18px;
     color: #13253B;
     font-family: "Raleway", sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: 122.4%;
+  }
+  .main section.main-third__section article.third-section-second__article div.article-card__advantages {
+    margin: 0px;
+    margin-top: 25px;
+    margin-left: 31px;
   }
   .main section.main-third__section article.third-section-second__article button.blue {
     background: #07ACE6;
@@ -417,9 +460,17 @@ body {
     color: #07ACE6;
     line-height: 62px;
   }
+  .main section.main-third__section article.third-section-second__article:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 10px 27px 0px rgb(7, 172, 230);
+  }
   .main section.main-third__section article.third-section-third__article {
     margin-top: 60px;
     border: 1px solid #55DFB4;
+    transition: all 0.3s ease-in-out;
+  }
+  .main section.main-third__section article.third-section-third__article div.article-card__prices p {
+    display: inline-block;
   }
   .main section.main-third__section article.third-section-third__article div.article-card__prices h4 {
     position: relative;
@@ -437,5 +488,9 @@ body {
   .main section.main-third__section article.third-section-third__article h2 {
     color: #55DFB4;
     line-height: 62px;
+  }
+  .main section.main-third__section article.third-section-third__article:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 10px 27px 0px rgb(85, 223, 180);
   }
 }/*# sourceMappingURL=style.css.map */
