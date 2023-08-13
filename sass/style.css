@@ -25,7 +25,7 @@ body {
     display: inline-block;
     padding: 17px 94px 16px 25px;
     color: rgb(8, 166, 228);
-    font-size: 32px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 300;
     line-height: 37px;
@@ -53,7 +53,7 @@ body {
     color: #A5A5A5;
     text-align: center;
     font-family: Open Sans;
-    font-size: 11px;
+    font-size: 0.688rem;
     font-style: normal;
     font-weight: 700;
     line-height: 15px;
@@ -69,6 +69,7 @@ body {
     /* FIRST SECTION */
     /* SECOND SECTION */                 
     /* THIRD SECTION */
+    /* FOUR SECTION */
   }
   .main section.main-first__section {
     padding-top: 180px;
@@ -79,12 +80,12 @@ body {
   .main section.main-first__section .first-article__sellmore {
     margin: 0 auto;
     text-align: center;
-    width: 310px;
+    width: 90%;
   }
   .main section.main-first__section .first-article__sellmore h2 {
     font-family: "Raleway", sans-serif;
     color: #000;
-    font-size: 35px;
+    font-size: 2.188rem;
     font-style: normal;
     font-weight: bold;
     line-height: normal;
@@ -94,7 +95,7 @@ body {
     font-family: "Open Sans", sans-serif;
     color: #000;
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: 23px;
@@ -105,11 +106,11 @@ body {
     color: #FFF;
     text-align: center;
     font-family: "Open Sans", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 700;
     line-height: 22px;
-    width: 310px;
+    width: 90%;
     height: 67px;
     cursor: pointer;
     border-radius: 40px;
@@ -132,10 +133,10 @@ body {
     color: #000;
     text-align: center;
     font-family: "Raleway", sans-serif;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 300;
     line-height: 35px;
-    width: 303px;
+    width: 85%;
     height: 112px;
     margin: 0 auto;
   }
@@ -143,22 +144,22 @@ body {
     margin-top: 25px;
   }
   .main section.main-first__section .third-article__sales div.third-article-sales__column img.third-article-sales-column__person {
-    width: 117px;
-    height: 140px;
+    width: 30%;
+    height: 35%;
     display: block;
     margin: 0 auto;
     margin-bottom: 25px;
   }
   .main section.main-first__section .third-article__sales div.third-article-sales__column img.third-article-sales-column__eye {
-    width: 176px;
-    height: 167px;
+    width: 45%;
+    height: 40%;
     display: block;
     margin: 0 auto;
     margin-bottom: 25px;
   }
   .main section.main-first__section .third-article__sales div.third-article-sales__column img.third-article-sales-column__posts {
-    width: 163px;
-    height: 168px;
+    width: 40%;
+    height: 45%;
     display: block;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -205,7 +206,7 @@ body {
     height: 72px;
     color: #000;
     font-family: "Raleway", sans-serif;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-style: normal;
     font-weight: bold;
     line-height: normal;
@@ -213,7 +214,7 @@ body {
   .main section.main-second__section article.second-section-first__article div.first-article-portatil__description p {
     color: #000;
     font-family: "Open Sans", sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
     line-height: 21px;
@@ -244,7 +245,7 @@ body {
     height: 70px;
     color: #000;
     font-family: "Raleway", sans-serif;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -255,7 +256,7 @@ body {
     height: 77px;
     color: #000;
     font-family: "Open Sans", sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
     line-height: 19px;
@@ -280,7 +281,7 @@ body {
     height: 109px;
     color: #000;
     font-family: "Raleway", sans-serif;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -291,7 +292,7 @@ body {
     height: 114px;
     color: #000;
     font-family: "Open Sans", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -307,7 +308,7 @@ body {
     background-position: center;
   }
   .main section.main-third__section {
-    margin-bottom: 45px;
+    margin-bottom: 85px;
     padding-top: 55px;
     width: 100%;
     text-align: center;
@@ -318,15 +319,15 @@ body {
   .main section.main-third__section h2.third-section__title {
     color: #000;
     font-family: "Raleway", sans-serif;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin-bottom: 14px;
   }
   .main section.main-third__section article.card {
-    width: 293px;
-    height: 251px;
+    width: 80%;
+    height: 75%;
     border-radius: 18px;
     background: #FFF;
     margin: 0 auto;
@@ -345,7 +346,7 @@ body {
     width: 52px;
     color: #13253B;
     font-family: "Raleway", sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: bold;
     line-height: 24px;
@@ -354,7 +355,7 @@ body {
   .main section.main-third__section article.card div.article-card__prices h2 {
     width: 59px;
     font-family: "Open Sans", sans-serif;
-    font-size: 46px;
+    font-size: 2.875rem;
     font-style: normal;
     font-weight: 300;
     line-height: 64px;
@@ -363,7 +364,7 @@ body {
   .main section.main-third__section article.card div.article-card__prices p {
     color: #13253B;
     font-family: "Raleway", sans-serif;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -386,7 +387,7 @@ body {
     margin-bottom: 20px;
     color: #000;
     font-family: "Open Sans", sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -404,7 +405,7 @@ body {
     border-radius: 23px;
     color: #FFF;
     font-family: "Open Sans", sans-serif;
-    font-size: 13px;
+    font-size: 0.813rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -419,7 +420,7 @@ body {
   .main section.main-third__section article.third-section-first__article h2 {
     color: #FB3B64;
     font-family: "Open Sans", sans-serif;
-    font-size: 46px;
+    font-size: 2.875rem;
     font-style: normal;
     font-weight: 300;
     line-height: 64px;
@@ -443,13 +444,12 @@ body {
     right: 18px;
     color: #13253B;
     font-family: "Raleway", sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 700;
     line-height: 122.4%;
   }
   .main section.main-third__section article.third-section-second__article div.article-card__advantages {
-    margin: 0px;
     margin-top: 25px;
     margin-left: 31px;
   }
@@ -469,6 +469,10 @@ body {
     border: 1px solid #55DFB4;
     transition: all 0.3s ease-in-out;
   }
+  .main section.main-third__section article.third-section-third__article div.article-card__prices {
+    position: relative;
+    top: -20px;
+  }
   .main section.main-third__section article.third-section-third__article div.article-card__prices p {
     display: inline-block;
   }
@@ -477,7 +481,7 @@ body {
     right: 5px;
     color: #13253B;
     font-family: "Raleway", sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: bold;
     line-height: 122.4%;
@@ -492,5 +496,160 @@ body {
   .main section.main-third__section article.third-section-third__article:hover {
     transform: scale(1.1);
     box-shadow: 5px 10px 27px 0px rgb(85, 223, 180);
+  }
+  .main section.main-four__section {
+    width: 100%;
+    /* FIRST ARTICLE */
+    /* SECOND ARTICLE */
+  }
+  .main section.main-four__section article.four-section-first__article {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .main section.main-four__section article.four-section-first__article div.first-article__info {
+    margin-left: 30px;
+    margin-bottom: 38px;
+  }
+  .main section.main-four__section article.four-section-first__article div.first-article__info h2 {
+    color: #000;
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .main section.main-four__section article.four-section-first__article div.first-article__info p.first-article-info__paraph {
+    width: 312px;
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  .main section.main-four__section article.four-section-first__article div.first-article__email, .main section.main-four__section article.four-section-first__article div.first-article__numberphone {
+    margin-left: 30px;
+  }
+  .main section.main-four__section article.four-section-first__article div.socials svg, .main section.main-four__section article.four-section-first__article p {
+    display: inline-block;
+    color: #A5A5A5;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+  }
+  .main section.main-four__section article.four-section-first__article div.first-article__numberphone {
+    margin-bottom: 56px;
+  }
+  .main section.main-four__section article.four-section-second__article {
+    margin-left: 30px;
+  }
+  .main section.main-four__section article.four-section-second__article form {
+    margin-bottom: 40px;
+  }
+  .main section.main-four__section article.four-section-second__article form label {
+    display: block;
+    color: #08A6E4;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.688rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 3.28px;
+  }
+  .main section.main-four__section article.four-section-second__article form input {
+    height: 42px;
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid black;
+    stroke-width: 1px;
+    stroke: #95989A;
+    outline: none;
+  }
+  .main section.main-four__section article.four-section-second__article form input#name {
+    margin-bottom: 40px;
+  }
+  .main section.main-four__section article.four-section-second__article form input#email {
+    margin-bottom: 31px;
+  }
+  .main section.main-four__section article.four-section-second__article form input#check {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    border: 1px solid #95989A;
+    position: relative;
+    top: -125px;
+    margin-right: 10px;
+  }
+  .main section.main-four__section article.four-section-second__article form p.form-consent {
+    display: inline-block;
+    width: 80%;
+    color: #707070;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .main section.main-four__section article.four-section-second__article div.form-consent__div {
+    text-align: left;
+  }
+  .main section.main-four__section article.four-section-second__article form button {
+    width: 70%;
+    height: 57px;
+    border-radius: 35px;
+    background: #08A6E4;
+    box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.29);
+    border: none;
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.813rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 33px;
+    margin-left: 80px;
+    cursor: pointer;
+  }
+  /* END SECTION FOUR */
+  footer {
+    width: 100%;
+    height: 89px;
+    background: #F7F7F7;
+    box-shadow: 0px -5px 40px 0px rgba(0, 0, 0, 0.2);
+  }
+  footer a {
+    text-decoration: none;
+  }
+  footer div.footer-info {
+    display: inline-block;
+    margin-left: 17px;
+    margin-top: 23px;
+  }
+  footer div.footer-info h3 {
+    color: #08A6E4;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+  }
+  footer div.footer-info p {
+    color: #A5A5A5;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.688rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  footer div.footer__socials {
+    display: inline-block;
+    margin-left: 44px;
+  }
+  footer div.footer__socials svg {
+    margin-left: 20px;
+    margin-bottom: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
