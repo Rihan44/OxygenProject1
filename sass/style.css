@@ -397,6 +397,7 @@ body {
     height: 11px;
   }
   .main section.main-third__section article.card button.card-prices__button {
+    cursor: pointer;
     border: none;
     width: 150px;
     height: 50px;
@@ -593,7 +594,7 @@ body {
     font-weight: 400;
     line-height: normal;
   }
-  .main section.main-four__section article.four-section-second__article div.form-consent__div {
+  .main section.main-four__section article.four-section-second__article form div.form-consent__div {
     text-align: left;
   }
   .main section.main-four__section article.four-section-second__article form button {
@@ -651,5 +652,51 @@ body {
   footer div.footer__socials svg {
     margin-left: 20px;
     margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  svg.head__iconburger {
+    margin-left: 210px;
+  }
+  .main section.main-four__section article.four-section-second__article form p.form-consent {
+    width: 30%;
+    margin-left: 110px;
+  }
+  .main section.main-first__section .third-article__sales div.third-article-sales__column {
+    margin-bottom: 50px;
+  }
+  .main section.main-first__section .third-article__sales div.third-article-sales__column img.third-article-sales-column__person {
+    width: 20%;
+    height: 25%;
+    display: inline-block;
+    margin: 0px;
+    margin-left: 90px;
+  }
+  .main section.main-first__section .third-article__sales div.third-article-sales__column img.third-article-sales-column__eye {
+    width: 25%;
+    height: 20%;
+    display: inline-block;
+    margin: 0px;
+    margin-left: 30px;
+  }
+  .main section.main-first__section .third-article__sales div.third-article-sales__column img.third-article-sales-column__posts {
+    width: 20%;
+    height: 25%;
+    display: inline-block;
+    margin: 0px;
+    margin-left: 30px;
+  }
+  .main section.main-third__section article.card div.article-card__prices {
+    top: -45px;
+    right: 35px;
+  }
+  .main section.main-third__section article.card button.card-prices__button {
+    width: 200px;
+    height: 80px;
+    bottom: 80px;
+    right: -80px;
+  }
+  footer div.footer__socials {
+    margin-left: 270px;
   }
 }/*# sourceMappingURL=style.css.map */
