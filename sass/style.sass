@@ -607,3 +607,142 @@ body
         div.footer__socials
             margin-left: 270px
 @media only screen and (min-width: 1000px)
+    header.head
+            background: #FFF
+            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29)
+            height: auto
+            position: fixed
+            width: 100%
+            z-index: 1
+            display: flex
+            justify-content: space-between
+            align-items: center
+            h1
+                font-family: $first-font-family
+                display: inline-block
+                padding: 17px 94px 16px 25px
+                color: $principal-color
+                font-size: 2rem
+                font-style: normal
+                font-weight: 300
+                line-height: 37px
+            svg.head__iconburger,
+            svg.head__iconclose
+                display: none
+            nav.menu
+                width: 50%
+                ul.menu__list
+                    width: 100%
+                    display: flex
+                    list-style: none
+                    justify-content: space-evenly
+                ul.menu__list li
+                    padding-top: 14px
+                ul.menu__list li a
+                    text-decoration: none
+                    color: #A5A5A5
+                    text-align: center
+                    font-family: Open Sans
+                    font-size: 0.688rem
+                    font-style: normal
+                    font-weight: 700
+                    line-height: 15px
+                    letter-spacing: 3.28px
+                    text-transform: uppercase
+                    padding-bottom: 23px
+                    transition: all 0.3s
+                ul.menu__list li a:hover
+                    color: rgba(0, 0, 0, 1)
+                    border-bottom: 3px solid #08A6E4
+    /* END HEADER */
+    main.main
+        /* FIRST SECTION */
+        section.main-first__section
+            padding-top: 180px
+            /* FIRST ARTICLE */
+            .first-article__sellmore
+                margin: 0 auto
+                text-align: center
+                width: 25%
+                h2
+                    font-family: $first-font-family
+                    color: #000
+                    font-size: 2.188rem
+                    font-style: normal
+                    font-weight: bold
+                    line-height: normal
+                    margin-bottom: 20px
+                p
+                    font-family: $second-font-family
+                    color: #000
+                    text-align: center
+                    font-size: 1rem
+                    font-style: normal
+                    font-weight: 400
+                    line-height: 23px
+                    margin-bottom: 28px
+                button
+                    border: none
+                    color: #FFF
+                    text-align: center
+                    font-family: $second-font-family
+                    font-size: 1rem
+                    font-style: normal
+                    font-weight: 700
+                    line-height: 22px
+                    width: 90%
+                    height: 67px
+                    cursor: pointer
+                    border-radius: 40px
+                    background: #08A6E4
+                    box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.29)
+            /* SECOND ARTICLE */
+            .second-article__background
+                margin-top: 70px
+                height: 500px
+                width: 100%
+                background: url('../img/Background.png'), 50%
+                background-size: cover
+                background-position: center
+                margin-bottom: 100px
+            /* THIRD ARTICLE */
+            .third-article__sales
+                margin-top: 13px
+                width: 100%
+                display: flex
+                flex-direction: column
+                align-items: center
+                h3
+                    color: #000
+                    text-align: center
+                    font-family: $first-font-family
+                    font-size: 1.875rem
+                    font-weight: 300
+                    line-height: 35px
+                    width: 85%
+                    height: 112px
+                    margin: 0 auto
+                div.third-article-sales__column
+                    width: 50%
+                    display: flex
+                    flex-direction: row
+                    margin-top: 25px
+                    img.third-article-sales-column__person
+                        width: 12%
+                        height: 10%
+                        display: block
+                        margin: 0 auto
+                        margin-bottom: 25px
+                    img.third-article-sales-column__eye
+                        width: 18%
+                        height: 10%
+                        display: block
+                        margin: 0 auto
+                        margin-bottom: 25px
+                    img.third-article-sales-column__posts
+                        width: 16%
+                        height: 15%
+                        display: block
+                        margin: 0 auto
+                        margin-bottom: 50px
+        /* SECOND SECTION */ 
