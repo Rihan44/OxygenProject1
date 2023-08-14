@@ -184,19 +184,12 @@ body {
   }
   .main section.main-second__section article.second-section-first__article div.first-article__portatil {
     height: 180px;
-  }
-  .main section.main-second__section article.second-section-first__article div.first-article__portatil img.first-article-portatil__circule {
-    width: 129px;
-    height: 128px;
-    left: 145px;
-    position: relative;
-  }
-  .main section.main-second__section article.second-section-first__article div.first-article__portatil img.first-article-portatil__macbook {
-    width: 193px;
-    height: 110px;
-    position: relative;
-    top: -90px;
-    left: 50px;
+    background-image: url("../img/macbook.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 50px;
+    width: 70%;
   }
   .main section.main-second__section article.second-section-first__article div.first-article-portatil__description {
     margin-left: 22px;
@@ -221,7 +214,13 @@ body {
     width: 272px;
   }
   .main section.main-second__section article.second-section-second__article div.second-article__phone {
-    margin-bottom: 40px;
+    height: 180px;
+    background-image: url("../img/phone.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 70px;
+    width: 55%;
   }
   .main section.main-second__section article.second-section-second__article div.second-article__phone img.second-article-phone__ellipse {
     width: 132px;
@@ -759,7 +758,8 @@ body {
   /* END HEADER */
   main.main {
     /* FIRST SECTION */
-    /* SECOND SECTION */ 
+    /* SECOND SECTION */                 
+    /* THIRD SECTION */ 
   }
   main.main section.main-first__section {
     padding-top: 180px;
@@ -860,5 +860,159 @@ body {
     display: block;
     margin: 0 auto;
     margin-bottom: 50px;
+  }
+  main.main section.main-second__section {
+    width: 100%;
+    background: #F7F7F7;
+    padding-top: 105px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* FIRST ARTICLE */
+    /* SECOND ARTICLE */
+    /* THIRD ARTICLE */
+  }
+  main.main section.main-second__section article.second-section__box {
+    margin-bottom: 41px;
+    width: 60%;
+    height: 370px;
+    border-radius: 5px;
+    border: 1px solid #E8E9ED;
+    background: #FFF;
+  }
+  main.main section.main-second__section article.second-section-first__article {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  main.main section.main-second__section article.second-section-first__article div.first-article__portatil {
+    height: 60%;
+    background-image: url("../img/macbook.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 50px;
+    width: 100%;
+  }
+  main.main section.main-second__section article.second-section-first__article div.first-article-portatil__description {
+    margin-left: 36px;
+    width: 80%;
+    height: 40%;
+  }
+  main.main section.main-second__section article.second-section-first__article div.first-article-portatil__description h3 {
+    width: 100%;
+    height: 72px;
+    color: #000;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+  }
+  main.main section.main-second__section article.second-section-first__article div.first-article-portatil__description p {
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    width: 70%;
+    height: 100%;
+    border-bottom: 3px solid #FB3B64;
+  }
+  main.main section.main-second__section article.second-section-second__article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main.main section.main-second__section article.second-section-second__article div.second-article__phone {
+    height: 80%;
+    background-image: url("../img/phone.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  main.main section.main-second__section article.second-section-second__article div.second-article-phone__description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 20px;
+  }
+  main.main section.main-second__section article.second-section-second__article div.second-article-phone__description h3 {
+    width: 80%;
+    height: 70px;
+    color: #000;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    margin-bottom: 18px;
+  }
+  main.main section.main-second__section article.second-section-second__article div.second-article-phone__description p {
+    width: 80%;
+    height: 100%;
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    border-bottom: 3px solid #08A6E4;
+    padding-bottom: 50px;
+  }
+  main.main section.main-second__section article.second-section-third__article {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+  }
+  main.main section.main-second__section article.second-section-third__article div.third-article-frame__description {
+    width: 70%;
+    height: 298px;
+    border-radius: 5px;
+    border: 1px solid #E8E9ED;
+    background: #FFF;
+    margin-right: 20px;
+  }
+  main.main section.main-second__section article.second-section-third__article div.third-article-frame__description h3, main.main section.main-second__section article.second-section-third__article div.third-article-frame__description p {
+    margin-left: 22px;
+  }
+  main.main section.main-second__section article.second-section-third__article div.third-article-frame__description h3 {
+    margin-top: 31px;
+    width: 65%;
+    height: 25%;
+    color: #000;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+  }
+  main.main section.main-second__section article.second-section-third__article div.third-article-frame__description p {
+    margin-top: 20px;
+    width: 70%;
+    height: 40%;
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-bottom: 3px solid #55DFB4;
+    margin-top: 20px;
+  }
+  main.main section.main-second__section article.second-section-third__article div.third-section__frame {
+    margin-left: 40px;
+    width: 50%;
+    height: 300px;
+    border-radius: 5px;
+    border: 1px solid #E8E9ED;
+    background-image: url("../img/Frame 5.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }/*# sourceMappingURL=style.css.map */
