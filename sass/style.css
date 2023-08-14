@@ -734,9 +734,6 @@ body {
     list-style: none;
     justify-content: space-evenly;
   }
-  header.head nav.menu ul.menu__list li {
-    padding-top: 14px;
-  }
   header.head nav.menu ul.menu__list li a {
     text-decoration: none;
     color: #A5A5A5;
@@ -753,13 +750,14 @@ body {
   }
   header.head nav.menu ul.menu__list li a:hover {
     color: rgb(0, 0, 0);
-    border-bottom: 3px solid #08A6E4;
+    border-bottom: 4px solid #08A6E4;
   }
   /* END HEADER */
   main.main {
     /* FIRST SECTION */
     /* SECOND SECTION */                 
     /* THIRD SECTION */ 
+    /* FOUR SECTION */
   }
   main.main section.main-first__section {
     padding-top: 180px;
@@ -1014,5 +1012,360 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+  }
+  main.main section.main-third__section {
+    margin-bottom: 85px;
+    padding-top: 55px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* FIRST ARTICLE */
+    /* SECOND ARTICLE */
+    /* THIRD ARTICLE */
+  }
+  main.main section.main-third__section div.third-section__divflex {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  main.main section.main-third__section h2.third-section__title {
+    color: #000;
+    font-family: "Raleway", sans-serif;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 14px;
+  }
+  main.main section.main-third__section article.card {
+    width: 25%;
+    height: 500px;
+    border-radius: 18px;
+    background: #FFF;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main.main section.main-third__section article.card div.article-card__prices h4 {
+    width: 52px;
+    color: #13253B;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 24px;
+    margin-top: 20px;
+  }
+  main.main section.main-third__section article.card div.article-card__prices h2 {
+    width: 59px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 64px;
+  }
+  main.main section.main-third__section article.card div.article-card__prices p {
+    color: #13253B;
+    font-family: "Raleway", sans-serif;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  main.main section.main-third__section article.card div.article-card__advantages {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+  }
+  main.main section.main-third__section article.card div.article-card__advantages p {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 15px 20px 15px 10px;
+  }
+  main.main section.main-third__section article.card div.article-card__advantages img {
+    width: 11px;
+    height: 11px;
+  }
+  main.main section.main-third__section article.card button.card-prices__button {
+    cursor: pointer;
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 23px;
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.813rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    bottom: -40px;
+  }
+  main.main section.main-third__section article.third-section-first__article {
+    border: 1px solid #FB3B64;
+    transition: all 0.3s ease-in-out;
+  }
+  main.main section.main-third__section article.third-section-first__article button.red {
+    background: #EB476E;
+    position: relative;
+    bottom: -45px;
+  }
+  main.main section.main-third__section article.third-section-first__article h2 {
+    color: #FB3B64;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 64px;
+  }
+  main.main section.main-third__section article.third-section-first__article:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 10px 27px 0px rgb(251, 59, 100);
+  }
+  main.main section.main-third__section article.third-section-second__article {
+    border: 1px solid #07ACE6;
+    transition: all 0.3s ease-in-out;
+  }
+  main.main section.main-third__section article.third-section-second__article div.article-card__prices h4.article-card-prices__title {
+    position: relative;
+    right: 18px;
+    color: #13253B;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 122.4%;
+  }
+  main.main section.main-third__section article.third-section-second__article div.article-card__advantages {
+    margin-top: 25px;
+    margin-left: 31px;
+  }
+  main.main section.main-third__section article.third-section-second__article button.blue {
+    background: #07ACE6;
+  }
+  main.main section.main-third__section article.third-section-second__article h2 {
+    color: #07ACE6;
+    line-height: 62px;
+  }
+  main.main section.main-third__section article.third-section-second__article:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 10px 27px 0px rgb(7, 172, 230);
+  }
+  main.main section.main-third__section article.third-section-third__article {
+    border: 1px solid #55DFB4;
+    transition: all 0.3s ease-in-out;
+  }
+  main.main section.main-third__section article.third-section-third__article div.article-card__advantages {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  main.main section.main-third__section article.third-section-third__article div.article-card__prices {
+    position: relative;
+    top: -20px;
+  }
+  main.main section.main-third__section article.third-section-third__article div.article-card__prices p {
+    margin-right: 20px;
+  }
+  main.main section.main-third__section article.third-section-third__article div.article-card__prices h4 {
+    position: relative;
+    right: 5px;
+    color: #13253B;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 122.4%;
+    margin-top: 50px;
+  }
+  main.main section.main-third__section article.third-section-third__article button.green {
+    background: #55DFB4;
+    position: relative;
+    bottom: -25px;
+  }
+  main.main section.main-third__section article.third-section-third__article h2 {
+    color: #55DFB4;
+    line-height: 62px;
+  }
+  main.main section.main-third__section article.third-section-third__article:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 10px 27px 0px rgb(85, 223, 180);
+  }
+  main.main section.main-four__section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* FIRST ARTICLE */
+    /* SECOND ARTICLE */
+  }
+  main.main section.main-four__section article.four-section-first__article {
+    width: 30%;
+    margin-left: 80px;
+  }
+  main.main section.main-four__section article.four-section-first__article div.first-article__info {
+    margin-bottom: 38px;
+  }
+  main.main section.main-four__section article.four-section-first__article div.first-article__info h2 {
+    color: #000;
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    margin-bottom: 22px;
+  }
+  main.main section.main-four__section article.four-section-first__article div.first-article__info p.first-article-info__paraph {
+    width: 70%;
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  main.main section.main-four__section article.four-section-first__article div.four-section__contactdiv {
+    display: flex;
+    justify-content: left;
+  }
+  main.main section.main-four__section article.four-section-first__article div.first-article__numberphone {
+    margin-left: 30px;
+  }
+  main.main section.main-four__section article.four-section-first__article div.socials {
+    display: flex;
+  }
+  main.main section.main-four__section article.four-section-first__article div.socials p {
+    margin-left: 10px;
+  }
+  main.main section.main-four__section article.four-section-first__article div.socials svg, main.main section.main-four__section article.four-section-first__article p {
+    color: #A5A5A5;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+  }
+  main.main section.main-four__section article.four-section-first__article div.first-article__numberphone {
+    margin-bottom: 56px;
+  }
+  main.main section.main-four__section article.four-section-second__article {
+    width: 30%;
+    margin-left: 30px;
+  }
+  main.main section.main-four__section article.four-section-second__article form {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+  main.main section.main-four__section article.four-section-second__article form label {
+    color: #08A6E4;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.688rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 3.28px;
+  }
+  main.main section.main-four__section article.four-section-second__article form input {
+    height: 42px;
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid black;
+    stroke-width: 1px;
+    stroke: #95989A;
+    outline: none;
+  }
+  main.main section.main-four__section article.four-section-second__article form div.form-consent__div {
+    display: flex;
+  }
+  main.main section.main-four__section article.four-section-second__article form input#name {
+    margin-bottom: 40px;
+  }
+  main.main section.main-four__section article.four-section-second__article form input#email {
+    margin-bottom: 31px;
+  }
+  main.main section.main-four__section article.four-section-second__article form input#check {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    border: 1px solid #95989A;
+    margin-right: 10px;
+  }
+  main.main section.main-four__section article.four-section-second__article form p.form-consent {
+    width: 80%;
+    color: #707070;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  main.main section.main-four__section article.four-section-second__article form div.form-consent__div {
+    text-align: left;
+  }
+  main.main section.main-four__section article.four-section-second__article form button {
+    width: 40%;
+    height: 57px;
+    border-radius: 35px;
+    background: #08A6E4;
+    box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.29);
+    border: none;
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.813rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 33px;
+    align-self: flex-end;
+    margin-right: 50px;
+    cursor: pointer;
+  }
+  /* END SECTION FOUR */  
+  footer {
+    width: 100%;
+    height: 89px;
+    background: #F7F7F7;
+    box-shadow: 0px -5px 40px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer a {
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  footer div.footer-info {
+    display: inline-block;
+    margin-left: 137px;
+  }
+  footer div.footer-info h3 {
+    color: #08A6E4;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+  }
+  footer div.footer-info p {
+    color: #A5A5A5;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.688rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  footer div.footer__socials:nth-child(2) {
+    margin-right: 136px;
   }
 }/*# sourceMappingURL=style.css.map */

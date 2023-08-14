@@ -535,7 +535,6 @@ body
         height: 89px
         background: #F7F7F7
         box-shadow: 0px -5px 40px 0px rgba(0, 0, 0, 0.20)
-    footer
         a
             text-decoration: none
         div.footer-info
@@ -637,8 +636,6 @@ body
                     display: flex
                     list-style: none
                     justify-content: space-evenly
-                ul.menu__list li
-                    padding-top: 14px
                 ul.menu__list li a
                     text-decoration: none
                     color: #A5A5A5
@@ -654,7 +651,7 @@ body
                     transition: all 0.3s
                 ul.menu__list li a:hover
                     color: rgba(0, 0, 0, 1)
-                    border-bottom: 3px solid #08A6E4
+                    border-bottom: 4px solid #08A6E4
     /* END HEADER */
     main.main
         /* FIRST SECTION */
@@ -884,3 +881,305 @@ body
                     background-position: center
                     background-repeat: no-repeat
         /* THIRD SECTION */ 
+        section.main-third__section
+            margin-bottom: 85px
+            padding-top: 55px
+            width: 100%
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            div.third-section__divflex
+                display: flex
+                width: 100%
+                justify-content: space-evenly
+                align-items: center
+            h2.third-section__title
+                color: #000
+                font-family: $first-font-family
+                font-size: 2.25rem
+                font-style: normal
+                font-weight: 400
+                line-height: normal
+                margin-bottom: 14px
+            article.card
+                width: 25%
+                height: 500px
+                border-radius: 18px
+                background: #FFF
+                margin-bottom: 30px
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                div.article-card__prices
+                    h4
+                        width: 52px
+                        color: #13253B
+                        font-family: $first-font-family
+                        font-size: 1.25rem
+                        font-style: normal
+                        font-weight: bold
+                        line-height: 24px
+                        margin-top: 20px
+                    h2
+                        width: 59px
+                        font-family: $second-font-family
+                        font-size: 2.875rem
+                        font-style: normal
+                        font-weight: 300
+                        line-height: 64px
+                    p
+                        color: #13253B
+                        font-family: $first-font-family
+                        font-size: 0.75rem
+                        font-style: normal
+                        font-weight: 700
+                        line-height: normal
+                div.article-card__advantages
+                    margin-top: 30px
+                    margin-bottom: 30px
+                    text-align: center
+                    width: 100%
+                    p
+                        display: inline-block
+                        margin-bottom: 20px
+                        color: #000
+                        font-family: $second-font-family
+                        font-size: 0.875rem
+                        font-style: normal
+                        font-weight: 400
+                        line-height: normal
+                        margin: 15px 20px 15px 10px
+                    img
+                        width: 11px
+                        height: 11px
+                button.card-prices__button
+                    cursor: pointer
+                    border: none
+                    width: 150px
+                    height: 50px
+                    border-radius: 23px
+                    color: #FFF
+                    font-family: $second-font-family
+                    font-size: 0.813rem
+                    font-style: normal
+                    font-weight: 700
+                    line-height: normal
+                    position: relative
+                    bottom: -40px
+            /* FIRST ARTICLE */
+            article.third-section-first__article
+                border: 1px solid #FB3B64
+                transition: all 0.3s ease-in-out
+                button.red
+                    background: #EB476E
+                    position: relative
+                    bottom: -45px
+                h2
+                    color: #FB3B64
+                    font-family: $second-font-family
+                    font-size: 2.875rem
+                    font-style: normal
+                    font-weight: 300
+                    line-height: 64px
+            article.third-section-first__article:hover
+                transform: scale(1.1)
+                box-shadow: 5px 10px 27px 0px rgba(251, 59, 100, 1)
+            /* SECOND ARTICLE */
+            article.third-section-second__article
+                border: 1px solid #07ACE6
+                transition: all 0.3s ease-in-out
+                div.article-card__prices
+                    h4.article-card-prices__title
+                        position: relative
+                        right: 18px
+                        color: #13253B
+                        font-family: $first-font-family
+                        font-size: 1.25rem
+                        font-style: normal
+                        font-weight: 700
+                        line-height: 122.4%
+                div.article-card__advantages
+                    margin-top: 25px
+                    margin-left: 31px
+                button.blue
+                    background: #07ACE6
+                h2
+                    color: #07ACE6
+                    line-height: 62px
+            article.third-section-second__article:hover
+                transform: scale(1.1)
+                box-shadow: 5px 10px 27px 0px rgba(7, 172, 230, 1)
+            /* THIRD ARTICLE */
+            article.third-section-third__article
+                border: 1px solid #55DFB4
+                transition: all 0.3s ease-in-out
+                div.article-card__advantages
+                    margin-bottom: 20px
+                    margin-top: 10px
+                div.article-card__prices
+                    position: relative
+                    top: -20px
+                    p
+                        margin-right: 20px
+                    h4
+                        position: relative
+                        right: 5px
+                        color: #13253B
+                        font-family: $first-font-family
+                        font-size: 1.25rem
+                        font-style: normal
+                        font-weight: bold
+                        line-height: 122.4%
+                        margin-top: 50px
+                button.green
+                    background: #55DFB4
+                    position: relative
+                    bottom: -25px
+                h2
+                    color: #55DFB4
+                    line-height: 62px
+            article.third-section-third__article:hover
+                transform: scale(1.1)
+                box-shadow: 5px 10px 27px 0px rgba(85, 223, 180, 1)
+        /* FOUR SECTION */
+        section.main-four__section
+            width: 100%
+            display: flex
+            justify-content: center
+            /* FIRST ARTICLE */
+            article.four-section-first__article
+                width: 30%
+                margin-left: 80px
+                div.first-article__info
+                    margin-bottom: 38px
+                    h2
+                        color: #000
+                        font-family: $first-font-family
+                        font-size: 40px
+                        font-style: normal
+                        font-weight: bold
+                        line-height: normal
+                        margin-bottom: 22px
+                    p.first-article-info__paraph
+                        width: 70%
+                        color: #000
+                        font-family: $second-font-family
+                        font-size: 1rem
+                        font-style: normal
+                        font-weight: 400
+                        line-height: 22px
+                div.four-section__contactdiv
+                    display: flex
+                    justify-content: left
+                div.first-article__numberphone
+                    margin-left: 30px
+                div.socials
+                    display: flex
+                div.socials p
+                    margin-left: 10px
+                div.socials svg, p
+                    color: #A5A5A5
+                    font-family: $second-font-family
+                    font-size: 1rem
+                    font-style: normal
+                    font-weight: 600
+                    line-height: 22px
+                div.first-article__numberphone
+                    margin-bottom: 56px
+            /* SECOND ARTICLE */
+            article.four-section-second__article
+                width: 30%
+                margin-left: 30px
+                form
+                    margin-bottom: 60px
+                    display: flex
+                    flex-direction: column
+                    label 
+                        color: #08A6E4
+                        font-family: $second-font-family
+                        font-size: 0.688rem
+                        font-style: normal
+                        font-weight: 600
+                        line-height: normal
+                        letter-spacing: 3.28px
+                    input
+                        height: 42px
+                        width: 90%
+                        border: none
+                        border-bottom: 1px solid black
+                        stroke-width: 1px
+                        stroke: #95989A
+                        outline: none
+                    div.form-consent__div
+                        display: flex
+                    input#name
+                        margin-bottom: 40px
+                    input#email
+                        margin-bottom: 31px
+                    input#check
+                        width: 24px
+                        height: 24px
+                        border-radius: 4px
+                        border: 1px solid #95989A
+                        margin-right: 10px
+                    p.form-consent
+                        width: 80%
+                        color: #707070
+                        font-family: $second-font-family
+                        font-size: 0.75rem
+                        font-style: normal
+                        font-weight: 400
+                        line-height: normal
+                    div.form-consent__div
+                        text-align: left
+                    button
+                        width: 40%
+                        height: 57px
+                        border-radius: 35px
+                        background: #08A6E4
+                        box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.29)
+                        border: none
+                        color: #FFF
+                        font-family: $second-font-family
+                        font-size: 0.813rem
+                        font-style: normal
+                        font-weight: 700
+                        line-height: normal
+                        margin-top: 33px
+                        align-self: flex-end
+                        margin-right: 50px
+                        cursor: pointer
+    /* END SECTION FOUR */  
+    footer
+        width: 100%
+        height: 89px
+        background: #F7F7F7
+        box-shadow: 0px -5px 40px 0px rgba(0, 0, 0, 0.20)
+        display: flex
+        justify-content: space-between
+        align-items: center
+        a
+            text-decoration: none
+            margin-right: 20px
+        div.footer-info
+            display: inline-block
+            margin-left: 137px
+            h3
+                color: #08A6E4
+                font-family: $first-font-family
+                font-size: 1.625rem
+                font-style: normal
+                font-weight: 300
+                line-height: 30px
+            p
+                color: #A5A5A5
+                font-family: $second-font-family
+                font-size: 0.688rem
+                font-style: normal
+                font-weight: 400
+                line-height: normal
+        div.footer__socials:nth-child(2)
+            margin-right: 136px
+        
