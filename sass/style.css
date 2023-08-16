@@ -89,7 +89,7 @@ body {
     font-style: normal;
     font-weight: bold;
     line-height: normal;
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
   }
   .main section.main-first__section .first-article__sellmore p {
     font-family: "Open Sans", sans-serif;
@@ -99,7 +99,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 23px;
-    margin-bottom: 28px;
+    margin-bottom: 1.75em;
   }
   .main section.main-first__section .first-article__sellmore button {
     border: none;
@@ -111,22 +111,22 @@ body {
     font-weight: 700;
     line-height: 22px;
     width: 90%;
-    height: 67px;
+    height: 4.1875em;
     cursor: pointer;
     border-radius: 40px;
     background: #08A6E4;
     box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.29);
   }
-  .main section.main-first__section .second-article__background {
-    margin-top: 51px;
-    height: 267px;
+  .main section.main-first__section div.second-article__background {
+    margin-top: 3.1875em;
+    height: 16.6875em;
     width: 100%;
     background: url("../img/Background.png"), 50%;
     background-size: cover;
     background-position: center;
   }
   .main section.main-first__section .third-article__sales {
-    margin-top: 13px;
+    margin-top: 0.8125em;
     width: 100%;
   }
   .main section.main-first__section .third-article__sales h3 {
@@ -141,28 +141,67 @@ body {
     margin: 0 auto;
   }
   .main section.main-first__section .third-article__sales div.third-article-sales__column {
-    margin-top: 25px;
+    margin-top: 1.5625em;
+    text-align: center;
   }
-  .main section.main-first__section .third-article__sales div.third-article-sales__column img.third-article-sales-column__person {
-    width: 30%;
-    height: 35%;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 25px;
+  .main section.main-first__section .third-article__sales div.third-article-sales__column div.columns {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5625em;
   }
-  .main section.main-first__section .third-article__sales div.third-article-sales__column img.third-article-sales-column__eye {
-    width: 45%;
-    height: 40%;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 25px;
+  .main section.main-first__section .third-article__sales div.third-article-sales__column div.columns h4 {
+    margin-top: 0.9375em;
+    color: #000;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: 5.96px;
   }
-  .main section.main-first__section .third-article__sales div.third-article-sales__column img.third-article-sales-column__posts {
-    width: 40%;
-    height: 45%;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 50px;
+  .main section.main-first__section .third-article__sales div.third-article-sales__column div.columns p {
+    margin-top: 1.25em;
+    color: #A5A5A5;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.063rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .main section.main-first__section .third-article__sales div.third-article-sales__column div.columns img.ellipse {
+    position: relative;
+    right: -1.25em;
+    width: 3.9375em;
+    height: 3.9375em;
+  }
+  .main section.main-first__section .third-article__sales div.third-article-sales__column div.columns img.icon {
+    width: 2.75em;
+    height: 3.25em;
+    position: relative;
+    right: 0.9375em;
+    top: -0.625em;
+    z-index: 1;
+  }
+  .main section.main-first__section .third-article__sales div.third-article-sales__column > div:nth-child(2) img.ellipse {
+    right: -1.875em;
+  }
+  .main section.main-first__section .third-article__sales div.third-article-sales__column > div:nth-child(2) img.icon {
+    width: 4.09375em;
+    height: 2.28125em;
+    top: -0.8125em;
+  }
+  .main section.main-first__section .third-article__sales div.third-article-sales__column > div:nth-child(3) {
+    margin-bottom: 3.125em;
+  }
+  .main section.main-first__section .third-article__sales div.third-article-sales__column > div:nth-child(3) img.ellipse {
+    right: -1.25em;
+  }
+  .main section.main-first__section .third-article__sales div.third-article-sales__column > div:nth-child(3) img.icon {
+    width: 3.25em;
+    height: 3em;
+    top: -0.5em;
   }
   .main section.main-second__section {
     width: 100%;
@@ -175,27 +214,36 @@ body {
   }
   .main section.main-second__section article.second-section__box {
     margin: 0 auto;
-    margin-bottom: 41px;
-    width: 314px;
-    height: 370px;
+    margin-bottom: 2.5625em;
+    width: 90%;
+    height: 23.125em;
     border-radius: 5px;
     border: 1px solid #E8E9ED;
     background: #FFF;
   }
-  .main section.main-second__section article.second-section-first__article div.first-article__portatil {
-    height: 180px;
-    background-image: url("../img/macbook.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-left: 50px;
-    width: 70%;
+  .main section.main-second__section article.second-section-first__article div.images {
+    height: 50%;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .main section.main-second__section article.second-section-first__article div.images > img:nth-child(1) {
+    width: 8em;
+    height: 8em;
+    position: relative;
+    right: -9.375em;
+  }
+  .main section.main-second__section article.second-section-first__article div.images > img:nth-child(2) {
+    width: 12.0625em;
+    height: 6.875em;
+    position: relative;
+    top: 1.25em;
+    right: 4.375em;
   }
   .main section.main-second__section article.second-section-first__article div.first-article-portatil__description {
-    margin-left: 22px;
+    margin-left: 1.375em;
   }
   .main section.main-second__section article.second-section-first__article div.first-article-portatil__description h3 {
-    width: 220px;
+    width: 80%;
     height: 72px;
     color: #000;
     font-family: "Raleway", sans-serif;
@@ -205,53 +253,48 @@ body {
     line-height: normal;
   }
   .main section.main-second__section article.second-section-first__article div.first-article-portatil__description p {
+    width: 95%;
     color: #000;
     font-family: "Open Sans", sans-serif;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
     line-height: 21px;
-    width: 272px;
   }
-  .main section.main-second__section article.second-section-second__article div.second-article__phone {
-    height: 180px;
-    background-image: url("../img/phone.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-left: 70px;
-    width: 55%;
+  .main section.main-second__section article.second-section-second__article div.images {
+    height: 45%;
+    text-align: center;
+    margin-top: 0.9375em;
   }
-  .main section.main-second__section article.second-section-second__article div.second-article__phone img.second-article-phone__ellipse {
-    width: 132px;
-    height: 132px;
-    top: 12px;
-    left: 25%;
+  .main section.main-second__section article.second-section-second__article div.images > img:nth-child(1) {
+    width: 8.25em;
+    height: 8.25em;
     position: relative;
+    right: -5.625em;
   }
-  .main section.main-second__section article.second-section-second__article div.second-article__phone img.second-article-phone {
-    width: 175px;
-    height: 135px;
-    left: -20%;
-    top: 25px;
+  .main section.main-second__section article.second-section-second__article div.images > img:nth-child(2) {
+    width: 10.9375em;
+    height: 8.4375em;
     position: relative;
+    top: 0.625em;
+    right: 2.8125em;
   }
   .main section.main-second__section article.second-section-second__article div.second-article-phone__description {
-    margin-left: 22px;
+    margin-left: 1.375em;
   }
   .main section.main-second__section article.second-section-second__article div.second-article-phone__description h3 {
-    width: 218px;
+    width: 80%;
     height: 70px;
     color: #000;
     font-family: "Raleway", sans-serif;
     font-size: 1.875rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     line-height: normal;
     margin-bottom: 18px;
   }
   .main section.main-second__section article.second-section-second__article div.second-article-phone__description p {
-    width: 272px;
+    width: 95%;
     height: 77px;
     color: #000;
     font-family: "Open Sans", sans-serif;
@@ -264,7 +307,7 @@ body {
     width: 100%;
   }
   .main section.main-second__section article.second-section-third__article div.third-article-frame__description {
-    width: 314px;
+    width: 90%;
     height: 298px;
     border-radius: 5px;
     border: 1px solid #E8E9ED;
@@ -276,7 +319,7 @@ body {
   }
   .main section.main-second__section article.second-section-third__article div.third-article-frame__description h3 {
     margin-top: 31px;
-    width: 274px;
+    width: 80%;
     height: 109px;
     color: #000;
     font-family: "Raleway", sans-serif;
@@ -287,7 +330,7 @@ body {
   }
   .main section.main-second__section article.second-section-third__article div.third-article-frame__description p {
     margin-top: 20px;
-    width: 274px;
+    width: 80%;
     height: 114px;
     color: #000;
     font-family: "Open Sans", sans-serif;
@@ -298,16 +341,18 @@ body {
   }
   .main section.main-second__section article.second-section-third__article div.third-section__frame {
     margin: 0 auto;
-    width: 314px;
+    width: 90%;
     height: 195px;
     border-radius: 5px;
     border: 1px solid #E8E9ED;
-    background-image: url("../img/Frame 5.png");
-    background-size: auto;
-    background-position: center;
+    background: #55DFB4;
+    text-align: center;
+  }
+  .main section.main-second__section article.second-section-third__article div.third-section__frame img.trumpet {
+    margin-top: 25px;
   }
   .main section.main-third__section {
-    margin-bottom: 85px;
+    margin-bottom: 5.3125em;
     padding-top: 55px;
     width: 100%;
     text-align: center;
@@ -325,21 +370,21 @@ body {
     margin-bottom: 14px;
   }
   .main section.main-third__section article.card {
-    width: 80%;
+    width: 85%;
     height: 75%;
     border-radius: 18px;
     background: #FFF;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 1.875em;
   }
   .main section.main-third__section article.card div.article-card-advantages__checks {
-    margin-left: 25px;
+    margin-left: 1.5625em;
   }
   .main section.main-third__section article.card div.article-card__prices {
     display: inline-block;
     position: relative;
-    top: -45px;
-    right: -15px;
+    top: -2.8125em;
+    right: -0.9375em;
   }
   .main section.main-third__section article.card div.article-card__prices h4 {
     width: 52px;
@@ -367,23 +412,23 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-top: 5px;
+    margin-top: 0.3125em;
     position: relative;
-    right: -12px;
+    right: -0.75em;
   }
   .main section.main-third__section article.card div.article-card__advantages {
     display: inline-block;
-    margin-top: 25px;
-    margin-left: 45px;
+    margin-top: 1.5625em;
+    margin-left: 2.8125em;
     text-align: justify;
   }
   .main section.main-third__section article.card div.article-card__advantages svg {
     display: inline-block;
   }
   .main section.main-third__section article.card div.article-card__advantages p {
-    margin-left: 10px;
+    margin-left: 0.625em;
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
     color: #000;
     font-family: "Open Sans", sans-serif;
     font-size: 0.875rem;
@@ -401,7 +446,7 @@ body {
     width: 150px;
     height: 50px;
     position: relative;
-    bottom: -10px;
+    bottom: -1.5625em;
     border-radius: 23px;
     color: #FFF;
     font-family: "Open Sans", sans-serif;
@@ -430,18 +475,18 @@ body {
     box-shadow: 5px 10px 27px 0px rgb(251, 59, 100);
   }
   .main section.main-third__section article.third-section-second__article {
-    margin-top: 60px;
+    margin-top: 3.75em;
     border: 1px solid #07ACE6;
     transition: all 0.3s ease-in-out;
   }
   .main section.main-third__section article.third-section-second__article div.article-card__prices {
     position: relative;
-    top: -20px;
-    right: -5px;
+    top: -1.25em;
+    right: -0.3125em;
   }
   .main section.main-third__section article.third-section-second__article div.article-card__prices h4.article-card-prices__title {
     position: relative;
-    right: 18px;
+    right: 1.125em;
     color: #13253B;
     font-family: "Raleway", sans-serif;
     font-size: 1.25rem;
@@ -450,8 +495,8 @@ body {
     line-height: 122.4%;
   }
   .main section.main-third__section article.third-section-second__article div.article-card__advantages {
-    margin-top: 25px;
-    margin-left: 31px;
+    margin-top: 1.5625em;
+    margin-left: 1.9375em;
   }
   .main section.main-third__section article.third-section-second__article button.blue {
     background: #07ACE6;
@@ -465,20 +510,20 @@ body {
     box-shadow: 5px 10px 27px 0px rgb(7, 172, 230);
   }
   .main section.main-third__section article.third-section-third__article {
-    margin-top: 60px;
+    margin-top: 3.75em;
     border: 1px solid #55DFB4;
     transition: all 0.3s ease-in-out;
   }
   .main section.main-third__section article.third-section-third__article div.article-card__prices {
     position: relative;
-    top: -20px;
+    top: -1.25em;
   }
   .main section.main-third__section article.third-section-third__article div.article-card__prices p {
     display: inline-block;
   }
   .main section.main-third__section article.third-section-third__article div.article-card__prices h4 {
     position: relative;
-    right: 5px;
+    right: 0.3125em;
     color: #13253B;
     font-family: "Raleway", sans-serif;
     font-size: 1.25rem;
@@ -507,19 +552,19 @@ body {
     margin: 0 auto;
   }
   .main section.main-four__section article.four-section-first__article div.first-article__info {
-    margin-left: 30px;
-    margin-bottom: 38px;
+    margin-left: 1.875em;
+    margin-bottom: 2.375em;
   }
   .main section.main-four__section article.four-section-first__article div.first-article__info h2 {
     color: #000;
     font-family: "Raleway", sans-serif;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
   }
   .main section.main-four__section article.four-section-first__article div.first-article__info p.first-article-info__paraph {
-    width: 312px;
+    width: 85%;
     color: #000;
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
@@ -528,9 +573,9 @@ body {
     line-height: 22px;
   }
   .main section.main-four__section article.four-section-first__article div.first-article__email, .main section.main-four__section article.four-section-first__article div.first-article__numberphone {
-    margin-left: 30px;
+    margin-left: 1.875em;
   }
-  .main section.main-four__section article.four-section-first__article div.socials svg, .main section.main-four__section article.four-section-first__article p {
+  .main section.main-four__section article.four-section-first__article div.socials svg, .main section.main-four__section article.four-section-first__article div.socials p {
     display: inline-block;
     color: #A5A5A5;
     font-family: "Open Sans", sans-serif;
@@ -540,13 +585,13 @@ body {
     line-height: 22px;
   }
   .main section.main-four__section article.four-section-first__article div.first-article__numberphone {
-    margin-bottom: 56px;
+    margin-bottom: 3.5em;
   }
   .main section.main-four__section article.four-section-second__article {
-    margin-left: 30px;
+    margin-left: 1.875em;
   }
   .main section.main-four__section article.four-section-second__article form {
-    margin-bottom: 40px;
+    margin-bottom: 2.5em;
   }
   .main section.main-four__section article.four-section-second__article form label {
     display: block;
@@ -568,30 +613,32 @@ body {
     outline: none;
   }
   .main section.main-four__section article.four-section-second__article form input#name {
-    margin-bottom: 40px;
+    margin-bottom: 2.5em;
   }
   .main section.main-four__section article.four-section-second__article form input#email {
-    margin-bottom: 31px;
+    margin-bottom: 1.9375em;
   }
   .main section.main-four__section article.four-section-second__article form input#check {
     display: inline-block;
-    width: 24px;
-    height: 24px;
+    width: 1.5em;
+    height: 1.5em;
     border-radius: 4px;
     border: 1px solid #95989A;
     position: relative;
-    top: -125px;
+    top: -8.125em;
     margin-right: 10px;
   }
   .main section.main-four__section article.four-section-second__article form p.form-consent {
     display: inline-block;
-    width: 80%;
+    width: 52%;
     color: #707070;
     font-family: "Open Sans", sans-serif;
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-align: start;
+    margin-left: 4.875em;
   }
   .main section.main-four__section article.four-section-second__article form div.form-consent__div {
     text-align: left;
@@ -655,7 +702,49 @@ body {
 }
 @media only screen and (min-width: 600px) and (max-width: 1000px) {
   svg.head__iconburger {
-    margin-left: 210px;
+    margin-left: 13.125em;
+  }
+  .main {
+    /* THIRD ARTICLE */
+    /* END THIRD SECTION */
+  }
+  .main section.main-third__section article.card div.article-card-advantages__checks {
+    margin-left: 1.563em;
+  }
+  .main section.main-third__section article.card div.article-card-advantages__checks img {
+    margin-left: 1.875em;
+  }
+  .main section.main-third__section article.card div.article-card__prices {
+    top: -2.8125em;
+    right: 1.5625em;
+  }
+  .main section.main-third__section article.card div.article-card__advantages {
+    margin-top: 0.9375em;
+    margin-left: -1.187em;
+  }
+  .main section.main-third__section article.card div.article-card__advantages svg {
+    margin-left: 1.875em;
+  }
+  .main section.main-third__section article.card button.card-prices__button {
+    width: 25%;
+    bottom: 5.438em;
+    right: -2.8125em;
+  }
+  .main section.main-third__section article.third-section-second__article div.article-card__prices {
+    top: -2.25em;
+    right: -0.437em;
+  }
+  .main section.main-third__section article.third-section-second__article div.article-card__advantages {
+    margin-top: 1.5625em;
+    margin-left: 1.9375em;
+  }
+  .main section.main-third__section article.third-section-second__article button.blue {
+    position: relative;
+    right: -1.875em;
+  }
+  .main section.main-third__section article.third-section-third__article div.article-card__prices {
+    top: -2.25em;
+    right: 2.1875em;
   }
   .main section.main-four__section article.four-section-second__article form p.form-consent {
     width: 30%;
@@ -684,16 +773,6 @@ body {
     display: inline-block;
     margin: 0px;
     margin-left: 30px;
-  }
-  .main section.main-third__section article.card div.article-card__prices {
-    top: -45px;
-    right: 35px;
-  }
-  .main section.main-third__section article.card button.card-prices__button {
-    width: 200px;
-    height: 80px;
-    bottom: 80px;
-    right: -80px;
   }
   footer div.footer__socials {
     margin-left: 270px;

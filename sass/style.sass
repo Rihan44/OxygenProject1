@@ -75,7 +75,7 @@ body
                     font-style: normal
                     font-weight: bold
                     line-height: normal
-                    margin-bottom: 20px
+                    margin-bottom: 1.25em
                 p
                     font-family: $second-font-family
                     color: #000
@@ -84,7 +84,7 @@ body
                     font-style: normal
                     font-weight: 400
                     line-height: 23px
-                    margin-bottom: 28px
+                    margin-bottom: 1.75em
                 button
                     border: none
                     color: #FFF
@@ -95,22 +95,22 @@ body
                     font-weight: 700
                     line-height: 22px
                     width: 90%
-                    height: 67px
+                    height: 4.1875em
                     cursor: pointer
                     border-radius: 40px
                     background: #08A6E4
                     box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.29)
             /* SECOND ARTICLE */
-            .second-article__background
-                margin-top: 51px
-                height: 267px
+            div.second-article__background
+                margin-top: 3.1875em
+                height: 16.6875em
                 width: 100%
                 background: url('../img/Background.png'), 50%
                 background-size: cover
                 background-position: center
             /* THIRD ARTICLE */
             .third-article__sales
-                margin-top: 13px
+                margin-top: 0.8125em
                 width: 100%
                 h3
                     color: #000
@@ -123,25 +123,59 @@ body
                     height: 112px
                     margin: 0 auto
                 div.third-article-sales__column
-                    margin-top: 25px
-                    img.third-article-sales-column__person
-                        width: 30%
-                        height: 35%
-                        display: block
-                        margin: 0 auto
-                        margin-bottom: 25px
-                    img.third-article-sales-column__eye
-                        width: 45%
-                        height: 40%
-                        display: block
-                        margin: 0 auto
-                        margin-bottom: 25px
-                    img.third-article-sales-column__posts
-                        width: 40%
-                        height: 45%
-                        display: block
-                        margin: 0 auto
-                        margin-bottom: 50px
+                    margin-top: 1.5625em
+                    text-align: center
+                    div.columns
+                        width: 100%
+                        text-align: center
+                        margin-bottom: 1.5625em
+                        h4
+                            margin-top: 0.9375em
+                            color: #000
+                            text-align: center
+                            font-family: $first-font-family
+                            font-size: 1.25rem
+                            font-style: normal
+                            font-weight: bold
+                            line-height: 24px
+                            letter-spacing: 5.96px
+                        p
+                            margin-top: 1.25em
+                            color: #A5A5A5
+                            text-align: center
+                            font-family: $first-font-family
+                            font-size: 1.063rem
+                            font-style: normal
+                            font-weight: 400
+                            line-height: 20px
+                        img.ellipse 
+                            position: relative
+                            right: -1.25em
+                            width: 3.9375em
+                            height: 3.9375em
+                        img.icon
+                            width: 2.75em
+                            height: 3.25em
+                            position: relative
+                            right: 0.9375em
+                            top: -0.625em
+                            z-index: 1
+                div.third-article-sales__column > div:nth-child(2)
+                    img.ellipse
+                        right: -1.875em
+                    img.icon
+                        width: 4.09375em
+                        height: 2.28125em
+                        top: -0.8125em
+                div.third-article-sales__column > div:nth-child(3)
+                    margin-bottom: 3.125em
+                    img.ellipse
+                        right: -1.25em
+                    img.icon 
+                        width: 3.25em
+                        height: 3em
+                        top: -0.5em
+
         /* SECOND SECTION */                 
         section.main-second__section
             width: 100%
@@ -150,26 +184,33 @@ body
             padding-bottom: 40px
             article.second-section__box
                 margin: 0 auto
-                margin-bottom: 41px
-                width: 314px
-                height: 370px
+                margin-bottom: 2.5625em
+                width: 90%
+                height: 23.125em
                 border-radius: 5px
                 border: 1px solid #E8E9ED
                 background: #FFF
             /* FIRST ARTICLE */
             article.second-section-first__article
-                div.first-article__portatil
-                    height: 180px
-                    background-image: url('../img/macbook.png')
-                    background-position: center
-                    background-size: contain
-                    background-repeat: no-repeat
-                    margin-left: 50px
-                    width: 70%
+                div.images
+                    height: 50%
+                    text-align: center
+                    margin-top: 5px
+                div.images > img:nth-child(1)
+                    width: 8em
+                    height: 8em
+                    position: relative
+                    right: -9.375em
+                div.images > img:nth-child(2)
+                    width: 12.0625em
+                    height: 6.875em
+                    position: relative
+                    top: 1.25em
+                    right: 4.375em                   
                 div.first-article-portatil__description
-                    margin-left: 22px
+                    margin-left: 1.375em
                     h3
-                        width: 220px
+                        width: 80%
                         height: 72px
                         color: #000
                         font-family: $first-font-family
@@ -178,49 +219,44 @@ body
                         font-weight: bold
                         line-height: normal
                     p
+                        width: 95%
                         color: #000
                         font-family: $second-font-family
                         font-size: 0.875rem
                         font-style: normal
                         font-weight: 400
                         line-height: 21px
-                        width: 272px
             /* SECOND ARTICLE */
             article.second-section-second__article
-                div.second-article__phone
-                    height: 180px
-                    background-image: url('../img/phone.png')
-                    background-position: center
-                    background-size: contain
-                    background-repeat: no-repeat
-                    margin-left: 70px
-                    width: 55%
-                    img.second-article-phone__ellipse
-                        width: 132px
-                        height: 132px
-                        top: 12px
-                        left: 25%
-                        position: relative
-                    img.second-article-phone
-                        width: 175px
-                        height: 135px
-                        left: -20%
-                        top: 25px
-                        position: relative
+                div.images
+                    height: 45%
+                    text-align: center
+                    margin-top: 0.9375em
+                div.images > img:nth-child(1)
+                    width: 8.25em
+                    height: 8.25em
+                    position: relative
+                    right: -5.625em
+                div.images > img:nth-child(2)
+                    width: 10.9375em
+                    height: 8.4375em
+                    position: relative
+                    top: 0.625em
+                    right: 2.8125em                      
                 div.second-article-phone__description
-                    margin-left: 22px
+                    margin-left: 1.375em
                     h3
-                        width: 218px
+                        width: 80%
                         height: 70px
                         color: #000
                         font-family: $first-font-family
                         font-size: 1.875rem
                         font-style: normal
-                        font-weight: 400
+                        font-weight: bold
                         line-height: normal
                         margin-bottom: 18px
                     p
-                        width: 272px
+                        width: 95%
                         height: 77px
                         color: #000
                         font-family: $second-font-family
@@ -232,7 +268,7 @@ body
             article.second-section-third__article
                 width: 100%
                 div.third-article-frame__description
-                    width: 314px
+                    width: 90%
                     height: 298px
                     border-radius: 5px
                     border: 1px solid #E8E9ED
@@ -242,7 +278,7 @@ body
                         margin-left: 22px
                     h3
                         margin-top: 31px
-                        width: 274px
+                        width: 80%
                         height: 109px
                         color: #000
                         font-family: $first-font-family
@@ -252,7 +288,7 @@ body
                         line-height: normal
                     p
                         margin-top: 20px
-                        width: 274px
+                        width: 80%
                         height: 114px
                         color: #000
                         font-family: $second-font-family
@@ -262,16 +298,17 @@ body
                         line-height: normal
                 div.third-section__frame
                     margin: 0 auto
-                    width: 314px
+                    width: 90%
                     height: 195px
                     border-radius: 5px
                     border: 1px solid #E8E9ED
-                    background-image: url('../img/Frame 5.png')
-                    background-size: auto
-                    background-position: center
+                    background: #55DFB4
+                    text-align: center
+                    img.trumpet 
+                        margin-top: 25px
         /* THIRD SECTION */
         section.main-third__section
-            margin-bottom: 85px
+            margin-bottom: 5.3125em
             padding-top: 55px
             width: 100%
             text-align: center
@@ -284,19 +321,19 @@ body
                 line-height: normal
                 margin-bottom: 14px
             article.card
-                width: 80%
+                width: 85%
                 height: 75%
                 border-radius: 18px
                 background: #FFF
                 margin: 0 auto
-                margin-bottom: 30px
+                margin-bottom: 1.875em
                 div.article-card-advantages__checks
-                    margin-left: 25px
+                    margin-left: 1.5625em
                 div.article-card__prices
                     display: inline-block
                     position: relative
-                    top: -45px
-                    right: -15px
+                    top: -2.8125em
+                    right: -0.9375em
                     h4
                         width: 52px
                         color: #13253B
@@ -321,20 +358,20 @@ body
                         font-style: normal
                         font-weight: 700
                         line-height: normal
-                        margin-top: 5px
+                        margin-top: 0.3125em
                         position: relative
-                        right: -12px
+                        right: -0.75em
                 div.article-card__advantages
                     display: inline-block
-                    margin-top: 25px
-                    margin-left: 45px
+                    margin-top: 1.5625em
+                    margin-left: 2.8125em
                     text-align: justify
                     svg
                         display: inline-block
                     p
-                        margin-left: 10px
+                        margin-left: 0.625em
                         display: inline-block
-                        margin-bottom: 20px
+                        margin-bottom: 1.25em
                         color: #000
                         font-family: $second-font-family
                         font-size: 0.875rem
@@ -350,7 +387,7 @@ body
                     width: 150px
                     height: 50px
                     position: relative
-                    bottom: -10px
+                    bottom: -1.5625em
                     border-radius: 23px
                     color: #FFF
                     font-family: $second-font-family
@@ -376,16 +413,16 @@ body
                 box-shadow: 5px 10px 27px 0px rgba(251, 59, 100, 1)
             /* SECOND ARTICLE */
             article.third-section-second__article
-                margin-top: 60px
+                margin-top: 3.75em
                 border: 1px solid #07ACE6
                 transition: all 0.3s ease-in-out
                 div.article-card__prices
                     position: relative
-                    top: -20px
-                    right: -5px
+                    top: -1.25em
+                    right: -0.3125em
                     h4.article-card-prices__title
                         position: relative
-                        right: 18px
+                        right: 1.125em
                         color: #13253B
                         font-family: $first-font-family
                         font-size: 1.25rem
@@ -393,8 +430,8 @@ body
                         font-weight: 700
                         line-height: 122.4%
                 div.article-card__advantages
-                    margin-top: 25px
-                    margin-left: 31px
+                    margin-top: 1.5625em
+                    margin-left: 1.9375em
                 button.blue
                     background: #07ACE6
                 h2
@@ -405,17 +442,17 @@ body
                 box-shadow: 5px 10px 27px 0px rgba(7, 172, 230, 1)
             /* THIRD ARTICLE */
             article.third-section-third__article
-                margin-top: 60px
+                margin-top: 3.75em
                 border: 1px solid #55DFB4
                 transition: all 0.3s ease-in-out
                 div.article-card__prices
                     position: relative
-                    top: -20px
+                    top: -1.25em
                     p
                         display: inline-block
                     h4
                         position: relative
-                        right: 5px
+                        right: 0.3125em
                         color: #13253B
                         font-family: $first-font-family
                         font-size: 1.25rem
@@ -438,17 +475,17 @@ body
                 width: 100%
                 margin: 0 auto
                 div.first-article__info
-                    margin-left: 30px
-                    margin-bottom: 38px
+                    margin-left: 1.875em
+                    margin-bottom: 2.375em
                     h2
                         color: #000
                         font-family: $first-font-family
-                        font-size: 40px
+                        font-size: 2.5rem
                         font-style: normal
                         font-weight: 400
                         line-height: normal
                     p.first-article-info__paraph
-                        width: 312px
+                        width: 85%
                         color: #000
                         font-family: $second-font-family
                         font-size: 1rem
@@ -456,22 +493,23 @@ body
                         font-weight: 400
                         line-height: 22px
                 div.first-article__email, div.first-article__numberphone
-                    margin-left: 30px
-                div.socials svg, p
-                    display: inline-block
-                    color: #A5A5A5
-                    font-family: $second-font-family
-                    font-size: 1rem
-                    font-style: normal
-                    font-weight: 600
-                    line-height: 22px
+                    margin-left: 1.875em
+                div.socials 
+                    svg, p
+                        display: inline-block
+                        color: #A5A5A5
+                        font-family: $second-font-family
+                        font-size: 1rem
+                        font-style: normal
+                        font-weight: 600
+                        line-height: 22px
                 div.first-article__numberphone
-                    margin-bottom: 56px
+                    margin-bottom: 3.5em
             /* SECOND ARTICLE */
             article.four-section-second__article
-                margin-left: 30px
+                margin-left: 1.875em
                 form
-                    margin-bottom: 40px
+                    margin-bottom: 2.5em
                     label 
                         display: block
                         color: #08A6E4
@@ -490,27 +528,29 @@ body
                         stroke: #95989A
                         outline: none
                     input#name
-                        margin-bottom: 40px
+                        margin-bottom: 2.5em
                     input#email
-                        margin-bottom: 31px
+                        margin-bottom: 1.9375em
                     input#check
                         display: inline-block
-                        width: 24px
-                        height: 24px
+                        width: 1.5em
+                        height: 1.5em
                         border-radius: 4px
                         border: 1px solid #95989A
                         position: relative
-                        top: -125px
+                        top: -8.125em
                         margin-right: 10px
                     p.form-consent
                         display: inline-block
-                        width: 80%
+                        width: 52%
                         color: #707070
                         font-family: $second-font-family
                         font-size: 0.75rem
                         font-style: normal
                         font-weight: 400
                         line-height: normal
+                        text-align: start
+                        margin-left: 4.875em
                     div.form-consent__div
                         text-align: left
                     button
@@ -563,8 +603,43 @@ body
             margin-bottom: 10px
 @media only screen and (min-width: 600px) and (max-width: 1000px)
     svg.head__iconburger
-        margin-left: 210px
+        margin-left: 13.125em
+    
     .main 
+        /* THIRD ARTICLE */
+        section.main-third__section 
+            article.card 
+                div.article-card-advantages__checks
+                    margin-left: 1.563em
+                    img 
+                        margin-left: 1.875em
+                div.article-card__prices
+                    top: -2.8125em
+                    right: 1.5625em
+                div.article-card__advantages
+                    margin-top: 0.9375em
+                    margin-left: -1.187em
+                    svg
+                        margin-left: 1.875em
+                button.card-prices__button
+                    width: 25%
+                    bottom: 5.438em
+                    right: -2.8125em
+            article.third-section-second__article
+                div.article-card__prices
+                    top: -2.25em
+                    right: -0.437em
+                div.article-card__advantages
+                    margin-top: 1.5625em
+                    margin-left: 1.9375em
+                button.blue
+                    position: relative
+                    right: -1.875em
+            article.third-section-third__article
+                div.article-card__prices
+                    top: -2.25em
+                    right: 2.1875em
+        /* END THIRD SECTION */
         section.main-four__section 
             article.four-section-second__article 
                 form 
@@ -593,19 +668,10 @@ body
                         display: inline-block
                         margin: 0px
                         margin-left: 30px
-        section.main-third__section
-            article.card
-                div.article-card__prices
-                    top: -45px
-                    right: 35px
-                button.card-prices__button
-                    width: 200px
-                    height: 80px
-                    bottom: 80px
-                    right: -80px
     footer
         div.footer__socials
             margin-left: 270px
+  
 @media only screen and (min-width: 1000px)
     header.head
             background: #FFF
