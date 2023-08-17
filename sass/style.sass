@@ -679,7 +679,7 @@ body
             height: auto
             position: fixed
             width: 100%
-            z-index: 1
+            z-index: 100
             display: flex
             justify-content: space-between
             align-items: center
@@ -770,12 +770,14 @@ body
                 background-position: center
                 margin-bottom: 100px
             /* THIRD ARTICLE */
-            .third-article__sales
+            article.third-article__sales
                 margin-top: 13px
                 width: 100%
                 display: flex
                 flex-direction: column
                 align-items: center
+                margin-bottom: 100px
+                transition: all 0.6s ease-out
                 h3
                     color: #000
                     text-align: center
@@ -787,28 +789,65 @@ body
                     height: 112px
                     margin: 0 auto
                 div.third-article-sales__column
-                    width: 50%
+                    width: 100%
                     display: flex
                     flex-direction: row
+                    justify-content: space-evenly
                     margin-top: 25px
-                    img.third-article-sales-column__person
-                        width: 12%
-                        height: 10%
-                        display: block
-                        margin: 0 auto
-                        margin-bottom: 25px
-                    img.third-article-sales-column__eye
-                        width: 18%
-                        height: 10%
-                        display: block
-                        margin: 0 auto
-                        margin-bottom: 25px
-                    img.third-article-sales-column__posts
-                        width: 16%
-                        height: 15%
-                        display: block
-                        margin: 0 auto
-                        margin-bottom: 50px
+                    transition: all 0.6s ease-out
+                    div.columns
+                        width: 100%
+                        text-align: center
+                        margin-bottom: 1.5625em
+                        h4
+                            margin-top: 0.9375em
+                            color: #000
+                            text-align: center
+                            font-family: $first-font-family
+                            font-size: 1.25rem
+                            font-style: normal
+                            font-weight: bold
+                            line-height: 24px
+                            letter-spacing: 5.96px
+                        p
+                            margin-top: 1.25em
+                            color: #A5A5A5
+                            text-align: center
+                            font-family: $first-font-family
+                            font-size: 1.063rem
+                            font-style: normal
+                            font-weight: 400
+                            line-height: 20px
+                        img.ellipse 
+                                position: relative
+                                right: -1.25em
+                                width: 3.938em
+                                height: 3.938em
+                        img.icon
+                                width: 2.75em
+                                height: 3.25em
+                                position: relative
+                                right: 0.6875em
+                                top: -0.625em
+                                z-index: 1
+                    div.third-article-sales__eye
+                div.third-article-sales__column > div:nth-child(2)
+                    img.ellipse
+                        width: 3.938em
+                        height: 3.938em
+                        right: -1.875em
+                    img.icon
+                        width: 4.09375em
+                        height: 2.28125em
+                        top: -0.8125em
+                div.third-article-sales__column > div:nth-child(3)
+                    margin-bottom: 3.125em
+                    img.ellipse
+                        right: -1.25em
+                    img.icon 
+                        width: 3.25em
+                        height: 3em
+                        top: -0.5em
         /* SECOND SECTION */                 
         section.main-second__section
             width: 100%
@@ -820,7 +859,7 @@ body
             align-items: center
             article.second-section__box
                 margin-bottom: 41px
-                width: 60%
+                width: 80%
                 height: 370px
                 border-radius: 5px
                 border: 1px solid #E8E9ED
@@ -833,16 +872,27 @@ body
                 align-items: center
                 div.first-article__portatil
                     height: 60%
-                    background-image: url('../img/macbook.png')
-                    background-position: center
-                    background-size: contain
-                    background-repeat: no-repeat
-                    margin-left: 50px
-                    width: 100%
+                    width: 60%
+                    transition: all 0.6s ease-out
+                    img.rectange
+                        width: 15.9375em
+                        height: 15.9375em
+                        position: relative
+                        top: -3.75em
+                        right: -7.8125em
+                        transition: all 0.6s ease-out
+                    img.macbook
+                        z-index: 1
+                        position: relative
+                        top: -15.625em
+                        right: 2.5em
+                        transition: all 0.6s ease-out
                 div.first-article-portatil__description
-                    margin-left: 36px
+                    margin-left: 2.25em
                     width: 80%
                     height: 40%
+                    margin-bottom: 2.5em
+                    transition: all 0.6s ease-out
                     h3
                         width: 100%
                         height: 72px
@@ -852,6 +902,7 @@ body
                         font-style: normal
                         font-weight: bold
                         line-height: normal
+                        transition: all 0.6s ease-out
                     p
                         color: #000
                         font-family: $second-font-family
@@ -862,23 +913,37 @@ body
                         width: 70%
                         height: 100%
                         border-bottom: 3px solid #FB3B64
+                        transition: all 0.6s ease-out
             /* SECOND ARTICLE */
             article.second-section-second__article
                 display: flex
                 justify-content: space-between
                 align-items: center
                 div.second-article__phone
-                    height: 80%
-                    background-image: url('../img/phone.png')
-                    background-position: center
-                    background-size: contain
-                    background-repeat: no-repeat
-                    width: 100%
+                    height: 60%
+                    width: 60%
+                    transition: all 0.6s ease-out
+                    img.ellipse
+                        width: 20em
+                        height: 20em
+                        position: relative
+                        top: -3.4375em
+                        right: -4.375em
+                        transition: all 0.6s ease-out
+                    img.iphone
+                        z-index: 1
+                        position: relative
+                        top: -22.5em
+                        right: -4.375em
+                        transition: all 0.6s ease-out
                 div.second-article-phone__description
                     display: flex
                     flex-direction: column
                     align-items: flex-end
-                    margin-right: 20px
+                    margin-right: 2.1875em
+                    width: 80%
+                    height: 40%
+                    transition: all 0.6s ease-out
                     h3
                         width: 80%
                         height: 70px
@@ -904,18 +969,22 @@ body
             article.second-section-third__article
                 display: flex
                 justify-content: space-around
-                width: 60%
+                width: 80%
+                margin-bottom: 80px
+                transition: all 0.6s ease-out
                 div.third-article-frame__description
-                    width: 70%
+                    width: 80%
                     height: 298px
                     border-radius: 5px
                     border: 1px solid #E8E9ED
                     background: #FFF
-                    margin-right: 20px
+                    margin-right: 1.25em
+                    transition: all 0.6s ease-out
                     h3, p
-                        margin-left: 22px
+                        margin-left: 1.375em
                     h3
-                        margin-top: 31px
+                        margin-top: 50px
+                        margin-left: 20px
                         width: 65%
                         height: 25%
                         color: #000
@@ -925,7 +994,7 @@ body
                         font-weight: bold
                         line-height: normal
                     p
-                        margin-top: 20px
+                        margin-top: 1.25em
                         width: 70%
                         height: 40%
                         color: #000
@@ -935,18 +1004,22 @@ body
                         font-weight: 400
                         line-height: normal
                         border-bottom: 3px solid #55DFB4
-                        margin-top: 20px
                 div.third-section__frame
-                    margin-left: 40px
+                    margin-left: 2.5em
                     width: 50%
                     height: 300px
                     border-radius: 5px
                     border: 1px solid #E8E9ED
-                    background-image: url('../img/Frame 5.png')
-                    background-size: cover
-                    background-position: center
-                    background-repeat: no-repeat
-        /* THIRD SECTION */ 
+                    background: #55DFB4
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    transition: all 0.6s ease-out
+                    img 
+                        width: 16.625em
+                        height: 13em
+                        transition: all 0.6s ease-out
+        /* THIRD SECTION */     
         section.main-third__section
             margin-bottom: 85px
             padding-top: 55px
@@ -955,11 +1028,13 @@ body
             flex-direction: column
             align-items: center
             justify-content: center
+            transition: all 0.6s ease-out
             div.third-section__divflex
                 display: flex
                 width: 100%
                 justify-content: space-evenly
                 align-items: center
+                transition: all 0.6s ease-out
             h2.third-section__title
                 color: #000
                 font-family: $first-font-family
@@ -978,6 +1053,7 @@ body
                 flex-direction: column
                 align-items: center
                 justify-content: center
+                transition: all 0.6s ease-out
                 div.article-card__prices
                     h4
                         width: 52px
