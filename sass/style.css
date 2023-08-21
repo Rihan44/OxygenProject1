@@ -75,6 +75,8 @@ body {
   /* START MAIN */
   .main {
     /* FIRST SECTION */
+    /* MODAL */
+    /* FIN MODAL */
     /* SECOND SECTION */                 
     /* THIRD SECTION */
     /* FOUR SECTION */
@@ -210,6 +212,65 @@ body {
     width: 3.25em;
     height: 3em;
     top: -0.5em;
+  }
+  .main div.modal {
+    display: none;
+    top: 40%;
+    z-index: 10000;
+    width: 90%;
+    height: 270px;
+    border: 1px solid rgb(8, 166, 228);
+    margin: 0 auto;
+    border-radius: 10px;
+    background: #fff;
+    position: fixed;
+    margin-left: 5%;
+    text-align: center;
+  }
+  .main div.modal svg.modal__iconclose {
+    cursor: pointer;
+    position: relative;
+    right: -45%;
+    top: 5px;
+  }
+  .main div.modal h3.modal__title {
+    font-family: "Raleway", sans-serif;
+    color: rgb(8, 166, 228);
+    font-size: 1.8em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .main div.modal form label {
+    display: block;
+    color: #08A6E4;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.688rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 3.28px;
+    font-size: 1em;
+  }
+  .main div.modal form input {
+    height: 42px;
+    width: 70%;
+    border: none;
+    border-bottom: 1px solid black;
+    stroke-width: 1px;
+    stroke: #95989A;
+    outline: none;
+    margin-bottom: 30px;
+  }
+  .main div.modal form button {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background: rgb(8, 166, 228);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1em;
+    color: #fff;
   }
   .main section.main-second__section {
     width: 100%;
@@ -630,6 +691,9 @@ body {
     stroke: #95989A;
     outline: none;
   }
+  .main section.main-four__section article.four-section-second__article form input.form-error {
+    border-bottom: 1px solid red;
+  }
   .main section.main-four__section article.four-section-second__article form input#name {
     margin-bottom: 2.5em;
   }
@@ -660,6 +724,13 @@ body {
   }
   .main section.main-four__section article.four-section-second__article form div.form-consent__div {
     text-align: left;
+  }
+  .main section.main-four__section article.four-section-second__article form p.check-error {
+    color: red;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 5px;
+    display: none;
   }
   .main section.main-four__section article.four-section-second__article form button {
     width: 55%;
