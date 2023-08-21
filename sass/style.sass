@@ -21,7 +21,11 @@ body
         height: auto
         position: fixed
         width: 100%
-        z-index: 1
+        z-index: 100
+        #percentage__scroll 
+            width: 0%
+            height: 0px
+            background: $principal-color
         h1
             font-family: $first-font-family
             display: inline-block
@@ -38,7 +42,10 @@ body
         svg.head__iconclose
             display: none
         nav.menu
-            display: none
+            /* display: none */
+            position: relative
+            top: -250px
+            height: 0px
             ul.menu__list
                 list-style: none
                 padding: 24px 25px
@@ -470,6 +477,15 @@ body
         /* FOUR SECTION */
         section.main-four__section
             width: 100%
+            button#backTop
+                border: none
+                background: $principal-color
+                padding: 10px
+                border: 1px solid #ffff
+                cursor: pointer
+                color: #ffff
+                position: relative
+                right: -85%
             /* FIRST ARTICLE */
             article.four-section-first__article
                 width: 100%
@@ -554,7 +570,7 @@ body
                     div.form-consent__div
                         text-align: left
                     button
-                        width: 70%
+                        width: 55%
                         height: 57px
                         border-radius: 35px
                         background: #08A6E4
@@ -641,6 +657,14 @@ body
                     right: 2.1875em
         /* END THIRD SECTION */
         section.main-four__section 
+            button#backTop
+                border: none
+                background: $principal-color
+                padding: 10px
+                border: 1px solid #ffff
+                cursor: pointer
+                color: #ffff
+                position: relative
             article.four-section-second__article 
                 form 
                     p.form-consent
@@ -1190,6 +1214,17 @@ body
             width: 100%
             display: flex
             justify-content: center
+            button#backTop
+                border: none
+                background: $principal-color
+                padding: 10px
+                height: 50px
+                border: 1px solid #ffff
+                cursor: pointer
+                color: #ffff
+                position: relative
+                bottom: -350px
+                right: -12%
             /* FIRST ARTICLE */
             article.four-section-first__article
                 width: 30%

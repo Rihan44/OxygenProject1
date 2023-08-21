@@ -18,7 +18,12 @@ body {
     height: auto;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 100;
+  }
+  .head #percentage__scroll {
+    width: 0%;
+    height: 0px;
+    background: rgb(8, 166, 228);
   }
   .head h1 {
     font-family: "Raleway", sans-serif;
@@ -39,7 +44,10 @@ body {
     display: none;
   }
   .head nav.menu {
-    display: none;
+    /* display: none */
+    position: relative;
+    top: -250px;
+    height: 0px;
   }
   .head nav.menu ul.menu__list {
     list-style: none;
@@ -547,6 +555,16 @@ body {
     /* FIRST ARTICLE */
     /* SECOND ARTICLE */
   }
+  .main section.main-four__section button#backTop {
+    border: none;
+    background: rgb(8, 166, 228);
+    padding: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+    color: white;
+    position: relative;
+    right: -85%;
+  }
   .main section.main-four__section article.four-section-first__article {
     width: 100%;
     margin: 0 auto;
@@ -644,7 +662,7 @@ body {
     text-align: left;
   }
   .main section.main-four__section article.four-section-second__article form button {
-    width: 70%;
+    width: 55%;
     height: 57px;
     border-radius: 35px;
     background: #08A6E4;
@@ -745,6 +763,15 @@ body {
   .main section.main-third__section article.third-section-third__article div.article-card__prices {
     top: -2.25em;
     right: 2.1875em;
+  }
+  .main section.main-four__section button#backTop {
+    border: none;
+    background: rgb(8, 166, 228);
+    padding: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+    color: white;
+    position: relative;
   }
   .main section.main-four__section article.four-section-second__article form p.form-consent {
     width: 30%;
@@ -1373,6 +1400,18 @@ body {
     justify-content: center;
     /* FIRST ARTICLE */
     /* SECOND ARTICLE */
+  }
+  main.main section.main-four__section button#backTop {
+    border: none;
+    background: rgb(8, 166, 228);
+    padding: 10px;
+    height: 50px;
+    border: 1px solid white;
+    cursor: pointer;
+    color: white;
+    position: relative;
+    bottom: -350px;
+    right: -12%;
   }
   main.main section.main-four__section article.four-section-first__article {
     width: 30%;
