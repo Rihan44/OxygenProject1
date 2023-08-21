@@ -17,6 +17,11 @@ let form_modal = document.querySelector('#form__modal');
 let h3_modal = document.querySelector('.modal__title');
 let label_modal = document.querySelector('.label__modal');
 let localstorage_modal = localStorage.getItem("modal_cerrado");
+let slider = document.querySelector('#slider');
+let btnSlider_left = document.querySelector('#slider__left');
+let btnSlider_right = document.querySelector('#slider__right');
+let img_slider = document.querySelector('.img__slider');
+let contador_slider = 1;
 
 const patron_email = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -149,7 +154,26 @@ window.addEventListener('click', (e) => {
 /* FIN DE MODAL */
 
 /* SLIDER */
+/* TODO MAQUETAR BIEN EL SLIDER */
+/* AGREGAR ANIMACIONES */
+let totalImg_sliders = 7;
+btnSlider_left.addEventListener('click', () => {
+    contador_slider--;
+    if(contador_slider >= 1){
+        img_slider.src = "img/img-" + contador_slider +".jpg";
+    } else {
+        contador_slider = totalImg_sliders + 1;
+    }
+});
 
+btnSlider_right.addEventListener('click', () => {
+    contador_slider++;
+    img_slider.src = "img/img-" + contador_slider +".jpg";
+
+    if(contador_slider > totalImg_sliders){
+        img_slider.src = "img/img-1.jpg";
+    }
+});
 
 /* FIN SLIDER */
 /*
@@ -159,6 +183,4 @@ testing como este https://jsonplaceholder.typicode.com/guide/ con fetch()
 de esta API https://github.com/fawazahmed0/currency-api#readme
 (https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/eur
 .json), permitiendo al usuario cambiar la moneda y ver los precios
-actualizados.
-● Crear un ‘Slider’ con esta funcionalidad (botones prev/next, puntos para las
-imágenes individuales, avanza automáticamente) */
+actualizados. */
