@@ -154,15 +154,17 @@ window.addEventListener('click', (e) => {
 /* FIN DE MODAL */
 
 /* SLIDER */
-/* TODO MAQUETAR BIEN EL SLIDER */
-/* AGREGAR ANIMACIONES */
 let totalImg_sliders = 7;
 btnSlider_left.addEventListener('click', () => {
     contador_slider--;
     if(contador_slider >= 1){
         img_slider.src = "img/img-" + contador_slider +".jpg";
     } else {
-        contador_slider = totalImg_sliders + 1;
+        contador_slider = totalImg_sliders;
+    }
+
+    if(contador_slider > 7){
+        contador_slider = 1;
     }
 });
 
@@ -172,6 +174,10 @@ btnSlider_right.addEventListener('click', () => {
 
     if(contador_slider > totalImg_sliders){
         img_slider.src = "img/img-1.jpg";
+    }
+
+    if(contador_slider > 7){
+        contador_slider = 1;
     }
 });
 
