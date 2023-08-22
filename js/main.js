@@ -2,13 +2,19 @@
 let burguer_icon = document.querySelector('#head__iconburger');
 let close_icon = document.querySelector('#head__iconclose');
 let menu = document.querySelector('#menu');
+/* FIN VARIABLES MENU */
+/* PORCENTAJE SCROLL */
 let percentage__scroll = document.querySelector('#percentage__scroll');
 let backTop = document.querySelector('#backTop');
+/* FIN PORCENTAJE */
+/* VARIABLES FORMULARIO */
 let btn_form = document.querySelector('#btn_form');
 let name_form = document.querySelector('#name');
 let email = document.querySelector('#email');
 let check = document.querySelector('#check');
 let check_error = document.querySelector('.check-error');
+/* FIN FORMULARIO */
+/* VARIABLES MODAL */
 let div_modal = document.querySelector('#modal');
 let email_modal = document.querySelector('#email_modal');
 let btn_modal = document.querySelector('#btn_modal');
@@ -17,16 +23,21 @@ let form_modal = document.querySelector('#form__modal');
 let h3_modal = document.querySelector('.modal__title');
 let label_modal = document.querySelector('.label__modal');
 let localstorage_modal = localStorage.getItem("modal_cerrado");
+/* FIN MODAL*/
+/* VARIBALES SLIDER */ 
 let slider = document.querySelector('#slider');
 let btnSlider_left = document.querySelector('#slider__left');
 let btnSlider_right = document.querySelector('#slider__right');
 let img_slider = document.querySelector('.img__slider');
 let contador_slider = 1;
+/* FIN SLIDER */
 
+/* PATRON EMAIL */
 const patron_email = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 /* MENU BURGUER */
 
+/* BOTON MENU BURGER */
 burguer_icon.addEventListener('click', () => {
     console.log('ey')
     menu.style.display = "block";
@@ -37,6 +48,7 @@ burguer_icon.addEventListener('click', () => {
     close_icon.style.display = "inline";
 });
 
+/* BOTON DE CERRAR MENU */
 close_icon.addEventListener("click", () => {
     menu.style.display = "none";
     menu.style.height = "0px";
@@ -48,6 +60,7 @@ close_icon.addEventListener("click", () => {
 
 /* FIN MENU BURGUER */
 
+/* FUNCION QUE DEVUELVE EL PORCENTAJE QUE SE HA ESCROLEADO EN LA WEB */
 function porcentajeTotal() {
     let altura_pantalla = window.scrollY;
     let alturaTotal_pantalla = document.documentElement.scrollHeight - window.innerHeight;
@@ -55,6 +68,7 @@ function porcentajeTotal() {
     return Math.floor(porcentajeTotal);
 }
 
+/* FUNCIÓN DEL BOTON QUE VUELVE ARRIBA A LA PAGINA */
 function backtopButton() {
     window.scrollTo({
         top: 0,
@@ -62,6 +76,7 @@ function backtopButton() {
     });
 }
 
+/* VALIDACIÓN DEL FORMULARIO */
 function formValidation(){
     if(name_form.value.length < 2 || name_form.value.length > 100){
         name_form.classList.add("form-error");
@@ -82,10 +97,12 @@ function formValidation(){
     }
 }
 
+/* VALIDADOR EMAIL */
 function emailValidation(email) {
     return patron_email.test(email);
 }
 
+/* APARECE MODAL AL HACER SCROLL */
 window.addEventListener('scroll', () => {
     let porcentaje = porcentajeTotal();
     percentage__scroll.style.height = "5px";
@@ -100,9 +117,10 @@ window.addEventListener('scroll', () => {
 
 backTop.addEventListener('click', backtopButton);
 
-btn_form.addEventListener('click', (e) => {
+btn_form.addEventListener('submit', (e) => {
     e.preventDefault();
     formValidation();
+    recogerDatosForm(formData)
 });
 
 /* MODAL */
@@ -114,7 +132,7 @@ if(!localstorage_modal){
 } 
 
 /* AL SUBSCRIBIRSE */
-btn_modal.addEventListener('click', (e) => {
+btn_modal.addEventListener('submit', (e) => {
     e.preventDefault();
 
     if(!emailValidation(email_modal)){
@@ -123,6 +141,7 @@ btn_modal.addEventListener('click', (e) => {
         email_modal.style.borderBottom = "1px solid black";
     }
 
+    recogerDatosForm(subcribeData);
 });
 
 /* MODAL CERRADO CON LA X */
@@ -148,6 +167,7 @@ window.addEventListener('click', (e) => {
     }
 });
 
+/* LIMPIAR EL LOCARSTORAGE */
 /* window.onload = () => {
     localStorage.clear();
 }; */
@@ -155,6 +175,7 @@ window.addEventListener('click', (e) => {
 
 /* SLIDER */
 let totalImg_sliders = 7;
+/* SLIDERLEFTBUTTON */
 btnSlider_left.addEventListener('click', () => {
     contador_slider--;
     if(contador_slider >= 1){
@@ -168,6 +189,7 @@ btnSlider_left.addEventListener('click', () => {
     }
 });
 
+/* SLIDERRIGHTBUTTON */
 btnSlider_right.addEventListener('click', () => {
     contador_slider++;
     img_slider.src = "img/img-" + contador_slider +".jpg";
@@ -181,11 +203,31 @@ btnSlider_right.addEventListener('click', () => {
     }
 });
 
+const formData = {
+    name: name_form.value,
+    email: email.value,
+    check: check.checked
+}
+
+const subcribeData = {
+    email: email_modal.value
+}
+
+function recogerDatosForm(data){
+    fetch('https://jsonplaceholder.typicode.com/posts', {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+            'Content-type': 'application/json; charset=UTF-8',
+        },
+})
+  .then((response) => response.json())
+  .then((json) => console.log(json));
+}
+
 /* FIN SLIDER */
-/*
-● Recoger los datos del formulario y mandarselos a un servidor JSON de
-testing como este https://jsonplaceholder.typicode.com/guide/ con fetch()
-● Añadir un selector de moneda (EUR, USD, GBP), obtener los tipos de cambio
+
+/* Añadir un selector de moneda (EUR, USD, GBP), obtener los tipos de cambio
 de esta API https://github.com/fawazahmed0/currency-api#readme
 (https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/eur
 .json), permitiendo al usuario cambiar la moneda y ver los precios

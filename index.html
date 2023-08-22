@@ -73,7 +73,7 @@
                 <path d="M2.49128 13.5013L13.4939 2.49872M13.4939 13.5013L2.49128 2.49872" stroke="#07ACE6" stroke-width="2"/>
             </svg>
             <h3 class="modal__title">Subscribe to our newsletter</h3>
-            <form id="form__modal">
+            <form id="form__modal" method="POST">
                 <label for="email_modal" class="label__modal">Email</label>
                 <input type="email" name="email_modal" id="email_modal"/>
                 <button id="btn_modal">Subscribe</button>
@@ -293,7 +293,7 @@
                         <p class="form-consent">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
                     </div>
                     <p class="check-error">Debes aceptar los términos</p>
-                    <button id="btn_form">Send</button>
+                    <button id="btn_form" type="submit">Send</button>
                 </form>
             </article>
             <button id="backTop">
