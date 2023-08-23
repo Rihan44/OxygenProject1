@@ -25,11 +25,12 @@ let h3_modal = document.querySelector('.modal__title');
 let label_modal = document.querySelector('.label__modal');
 let localstorage_modal = localStorage.getItem("modal_cerrado");
 /* FIN MODAL*/
-/* VARIBALES SLIDER */ 
+/* VARIBALES SLIDER */
 let slider = document.querySelector('#slider');
 let btnSlider_left = document.querySelector('#slider__left');
 let btnSlider_right = document.querySelector('#slider__right');
 let img_slider = document.querySelector('.img__slider');
+let circles__slider = document.getElementsByClassName('circles__slider');
 let contador_slider = 1;
 /* FIN SLIDER */
 
@@ -78,20 +79,20 @@ function backtopButton() {
 }
 
 /* VALIDACIÓN DEL FORMULARIO */
-function formValidation(){
-    if(name_form.value.length < 2 || name_form.value.length > 100){
+function formValidation() {
+    if (name_form.value.length < 2 || name_form.value.length > 100) {
         name_form.classList.add("form-error");
     } else {
         name_form.classList.remove("form-error");
     }
 
-    if(!emailValidation(email.value)){
+    if (!emailValidation(email.value)) {
         email.classList.add("form-error");
     } else {
         email.classList.remove("form-error");
     }
 
-    if(!check.checked){
+    if (!check.checked) {
         check_error.style.display = 'block';
     } else {
         check_error.style.display = 'none';
@@ -110,7 +111,7 @@ window.addEventListener('scroll', () => {
     percentage__scroll.style.width = porcentaje + "%";
 
     /* MODAL APARECER AL 25% DE LA WEB Y SI NO ESTÁ EN EL LOCALSTORAGE */
-    if(porcentaje == 25 && !localstorage_modal){
+    if (porcentaje == 25 && !localstorage_modal) {
         div_modal.style.display = "block";
     }
 
@@ -126,17 +127,17 @@ form__contact.addEventListener('submit', (e) => {
 
 /* MODAL */
 /* APARECE A LOS 5s */
-if(!localstorage_modal){
+if (!localstorage_modal) {
     setTimeout(() => {
         div_modal.style.display = "block";
     }, 5000);
-} 
+}
 
 /* AL SUBSCRIBIRSE */
 form__modal.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    if(!emailValidation(email_modal)){
+    if (!emailValidation(email_modal)) {
         email_modal.style.borderBottom = "1px solid red";
     } else {
         email_modal.style.borderBottom = "1px solid black";
@@ -153,7 +154,7 @@ modal_icon.addEventListener('click', () => {
 
 /* MODAL CERRADO CON EL ESC */
 window.addEventListener('keydown', (e) => {
-    if(e.key == "Escape"){
+    if (e.key == "Escape") {
         div_modal.style.display = "none";
         localStorage.setItem("modal_cerrado", div_modal);
     }
@@ -161,8 +162,8 @@ window.addEventListener('keydown', (e) => {
 
 /* MODAL CERRADO CLICANDO FUERA */
 window.addEventListener('click', (e) => {
-    if( e.target != form_modal && e.target != div_modal && e.target != h3_modal 
-        && e.target != email_modal && e.target != btn_modal && e.target != label_modal){
+    if (e.target != form_modal && e.target != div_modal && e.target != h3_modal
+        && e.target != email_modal && e.target != btn_modal && e.target != label_modal) {
         div_modal.style.display = "none";
         localStorage.setItem("modal_cerrado", div_modal);
     }
@@ -175,34 +176,68 @@ window.addEventListener('click', (e) => {
 /* FIN DE MODAL */
 
 /* SLIDER */
-let totalImg_sliders = 7;
+let totalImg_sliders = 4;
+circles__slider[0].style.background = "rgba(226, 226, 226, 0.795)";
+
 /* SLIDERLEFTBUTTON */
 btnSlider_left.addEventListener('click', () => {
     contador_slider--;
-    if(contador_slider >= 1){
-        img_slider.src = "img/img-" + contador_slider +".jpg";
-    } else {
+    if (contador_slider >= 1) {
+        img_slider.src = "img/img-" + contador_slider + ".jpg";
+    } else if(contador_slider == 0) {
         contador_slider = totalImg_sliders;
-    }
+        img_slider.src = "img/img-" + totalImg_sliders + ".jpg";
+    } 
 
-    if(contador_slider > 7){
+    if (contador_slider > totalImg_sliders) {
         contador_slider = 1;
-    }
+    } 
+
+    sliderDots(contador_slider);
+
 });
+
 
 /* SLIDERRIGHTBUTTON */
 btnSlider_right.addEventListener('click', () => {
     contador_slider++;
-    img_slider.src = "img/img-" + contador_slider +".jpg";
+    img_slider.src = "img/img-" + contador_slider + ".jpg";
 
-    if(contador_slider > totalImg_sliders){
+    if (contador_slider > totalImg_sliders) {
         img_slider.src = "img/img-1.jpg";
     }
 
-    if(contador_slider > 7){
+    if (contador_slider > totalImg_sliders) {
         contador_slider = 1;
     }
+
+    sliderDots(contador_slider);
+
 });
+
+/* FUNCION PUNTITOS SLIDER */
+function sliderDots(contador){
+    for (let index = 0; index < circles__slider.length; index++) {
+        if(contador - 1 == index){
+            circles__slider[index].style.background = "rgba(226, 226, 226, 0.795)";
+        } else {
+            circles__slider[index].style.background = "rgba(226, 226, 226, 0.466)";
+        }       
+    } 
+}
+
+function sliderDotsImages(){
+    for (let index = 0; index < circles__slider.length; index++) {
+        circles__slider[index].addEventListener('click', () => {
+            img_slider.src = "img/img-" + (index + 1) + ".jpg";
+            sliderDots(index + 1);
+        });
+    }
+}
+
+sliderDotsImages();
+
+/* OBJETOS FORMULARIOS */
 
 const formData = {
     name: name_form.value,
@@ -214,16 +249,16 @@ const subcribeData = {
     email: email_modal.value
 }
 
-function recogerDatosForm(data){
+function recogerDatosForm(data) {
     fetch('https://jsonplaceholder.typicode.com/posts', {
         method: 'POST',
         body: JSON.stringify(data),
         headers: {
             'Content-type': 'application/json; charset=UTF-8',
         },
-})
-  .then((response) => response.json())
-  .then((json) => console.log(json));
+    })
+        .then((response) => response.json())
+        .then((json) => console.log(json));
 }
 
 /* FIN SLIDER */
