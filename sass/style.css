@@ -639,7 +639,7 @@ body {
     position: relative;
     width: 100%;
     height: 30%;
-    top: 10em;
+    top: 11em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -830,6 +830,30 @@ body {
     /* THIRD ARTICLE */
     /* END THIRD SECTION */
   }
+  .main section.main-first__section .third-article__sales div.third-article-sales__column {
+    margin-bottom: 50px;
+  }
+  .main section.main-first__section .third-article__sales div.third-article-sales__column img.third-article-sales-column__person {
+    width: 20%;
+    height: 25%;
+    display: inline-block;
+    margin: 0px;
+    margin-left: 90px;
+  }
+  .main section.main-first__section .third-article__sales div.third-article-sales__column img.third-article-sales-column__eye {
+    width: 25%;
+    height: 20%;
+    display: inline-block;
+    margin: 0px;
+    margin-left: 30px;
+  }
+  .main section.main-first__section .third-article__sales div.third-article-sales__column img.third-article-sales-column__posts {
+    width: 20%;
+    height: 25%;
+    display: inline-block;
+    margin: 0px;
+    margin-left: 30px;
+  }
   .main section.main-third__section article.card div.article-card-advantages__checks {
     margin-left: 1.563em;
   }
@@ -868,6 +892,38 @@ body {
     top: -2.25em;
     right: 2.1875em;
   }
+  .main div#slider {
+    width: 80%;
+    height: 550px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+  .main div#slider img {
+    width: 100%;
+    height: 550px;
+    border-radius: 10px;
+  }
+  .main div#slider button {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 100%;
+    background: rgba(14, 13, 13, 0.308);
+    color: white;
+    margin: 20px;
+  }
+  .main div#slider div.buttons__slider {
+    justify-self: center;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    top: 18em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .main section.main-four__section button#backTop {
     border: none;
     background: rgb(8, 166, 228);
@@ -880,30 +936,6 @@ body {
   .main section.main-four__section article.four-section-second__article form p.form-consent {
     width: 30%;
     margin-left: 110px;
-  }
-  .main section.main-first__section .third-article__sales div.third-article-sales__column {
-    margin-bottom: 50px;
-  }
-  .main section.main-first__section .third-article__sales div.third-article-sales__column img.third-article-sales-column__person {
-    width: 20%;
-    height: 25%;
-    display: inline-block;
-    margin: 0px;
-    margin-left: 90px;
-  }
-  .main section.main-first__section .third-article__sales div.third-article-sales__column img.third-article-sales-column__eye {
-    width: 25%;
-    height: 20%;
-    display: inline-block;
-    margin: 0px;
-    margin-left: 30px;
-  }
-  .main section.main-first__section .third-article__sales div.third-article-sales__column img.third-article-sales-column__posts {
-    width: 20%;
-    height: 25%;
-    display: inline-block;
-    margin: 0px;
-    margin-left: 30px;
   }
   footer div.footer__socials {
     margin-left: 270px;
@@ -920,6 +952,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  header.head #percentage__scroll {
+    width: 0%;
+    height: 0px;
+    background: rgb(8, 166, 228);
+    position: fixed;
+    top: 0px;
   }
   header.head h1 {
     font-family: "Raleway", sans-serif;
@@ -1581,10 +1620,11 @@ body {
     margin: 20px;
   }
   main.main div#slider div.buttons__slider {
+    justify-self: center;
     position: relative;
     width: 100%;
     height: 50px;
-    top: 10em;
+    top: 18em;
     display: flex;
     justify-content: space-between;
     align-items: center;

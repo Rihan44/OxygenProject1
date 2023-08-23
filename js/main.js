@@ -8,6 +8,7 @@ let percentage__scroll = document.querySelector('#percentage__scroll');
 let backTop = document.querySelector('#backTop');
 /* FIN PORCENTAJE */
 /* VARIABLES FORMULARIO */
+let form__contact = document.querySelector('#form__contact');
 let btn_form = document.querySelector('#btn_form');
 let name_form = document.querySelector('#name');
 let email = document.querySelector('#email');
@@ -117,7 +118,7 @@ window.addEventListener('scroll', () => {
 
 backTop.addEventListener('click', backtopButton);
 
-btn_form.addEventListener('submit', (e) => {
+form__contact.addEventListener('submit', (e) => {
     e.preventDefault();
     formValidation();
     recogerDatosForm(formData)
@@ -132,7 +133,7 @@ if(!localstorage_modal){
 } 
 
 /* AL SUBSCRIBIRSE */
-btn_modal.addEventListener('submit', (e) => {
+form__modal.addEventListener('submit', (e) => {
     e.preventDefault();
 
     if(!emailValidation(email_modal)){
