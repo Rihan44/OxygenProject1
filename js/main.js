@@ -184,14 +184,14 @@ btnSlider_left.addEventListener('click', () => {
     contador_slider--;
     if (contador_slider >= 1) {
         img_slider.src = "img/img-" + contador_slider + ".jpg";
-    } else if(contador_slider == 0) {
+    } else if (contador_slider == 0) {
         contador_slider = totalImg_sliders;
         img_slider.src = "img/img-" + totalImg_sliders + ".jpg";
-    } 
+    }
 
     if (contador_slider > totalImg_sliders) {
         contador_slider = 1;
-    } 
+    }
 
     sliderDots(contador_slider);
 
@@ -216,17 +216,17 @@ btnSlider_right.addEventListener('click', () => {
 });
 
 /* FUNCION PUNTITOS SLIDER */
-function sliderDots(contador){
+function sliderDots(contador) {
     for (let index = 0; index < circles__slider.length; index++) {
-        if(contador - 1 == index){
+        if (contador - 1 == index) {
             circles__slider[index].style.background = "rgba(226, 226, 226, 0.795)";
         } else {
             circles__slider[index].style.background = "rgba(226, 226, 226, 0.466)";
-        }       
-    } 
+        }
+    }
 }
 
-function sliderDotsImages(){
+function sliderDotsImages() {
     for (let index = 0; index < circles__slider.length; index++) {
         circles__slider[index].addEventListener('click', () => {
             img_slider.src = "img/img-" + (index + 1) + ".jpg";
@@ -268,3 +268,58 @@ de esta API https://github.com/fawazahmed0/currency-api#readme
 (https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/eur
 .json), permitiendo al usuario cambiar la moneda y ver los precios
 actualizados. */
+
+/* IR A LAS SECCIONES */
+let links = document.getElementsByClassName('menu__enlace');
+
+// Agrega un evento de clic al enlace
+links[0].addEventListener('click', function (event) {
+    event.preventDefault();
+
+    let why_us_section = document.getElementById('third-article__sales');
+    let why_us_top = why_us_section.offsetTop;
+    
+    window.scrollTo({
+        top: why_us_top,
+        behavior: 'smooth'
+    });
+});
+
+// Agrega un evento de clic al enlace
+links[1].addEventListener('click', function (event) {
+    event.preventDefault();
+
+    let benefitsSection = document.getElementById('main-second__section');
+    let benefitsSectionTop = benefitsSection.offsetTop;
+    
+    window.scrollTo({
+        top: benefitsSectionTop,
+        behavior: 'smooth'
+    });
+});
+
+// Agrega un evento de clic al enlace
+links[2].addEventListener('click', function (event) {
+    event.preventDefault();
+
+    let prices_section = document.getElementById('main-third__section');
+    let price_top = prices_section.offsetTop;
+    
+    window.scrollTo({
+        top: price_top,
+        behavior: 'smooth'
+    });
+});
+
+// Agrega un evento de clic al enlace
+links[3].addEventListener('click', function (event) {
+    event.preventDefault();
+
+    let contact_section = document.getElementById('main-four__section');
+    let contact_top = contact_section.offsetTop;
+    
+    window.scrollTo({
+        top: contact_top,
+        behavior: 'smooth'
+    });
+});
